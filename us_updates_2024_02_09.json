@@ -1,0 +1,47 @@
+{
+  "tariff_updates": [
+    {
+      "date": "2024-02-09",
+      "announcement_type": "Campaign Statement",
+      "status": "Proposed - Not Yet Implemented",
+      "changes": [
+        {
+          "product_category": "Steel",
+          "affected_hts_codes": [
+            "7206-7229",
+            "7301-7307"
+          ],
+          "country_origin": "China",
+          "duty_changes": {
+            "current_rate": "25%",
+            "proposed_rate": "Not Specified",
+            "implementation_date": "Not Determined"
+          },
+          "description": "Proposed additional tariffs on Chinese steel imports announced during campaign"
+        },
+        {
+          "product_category": "Aluminum",
+          "affected_hts_codes": [
+            "7601-7616"
+          ],
+          "country_origin": "China",
+          "duty_changes": {
+            "current_rate": "10%",
+            "proposed_rate": "Not Specified",
+            "implementation_date": "Not Determined"
+          },
+          "description": "Proposed additional tariffs on Chinese aluminum imports announced during campaign"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "This is based on a campaign announcement, not an official policy change",
+    "Specific duty rates and implementation details have not been announced",
+    "Current Section 232 tariffs remain in effect"
+  ],
+  "sources": [
+    "News reports from February 9, 2024",
+    "Existing Section 232 tariff framework"
+  ]
+}
