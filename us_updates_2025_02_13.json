@@ -1,0 +1,54 @@
+{
+  "tariff_updates": [
+    {
+      "date": "2025-02-13",
+      "status": "Current Section 232 Tariffs Remain in Effect",
+      "current_measures": [
+        {
+          "product_category": "Steel Articles",
+          "affected_hts_codes": [
+            "7206-7229",
+            "7301-7307"
+          ],
+          "country_origin": "Most Countries (with exemptions)",
+          "duty_rates": {
+            "current_rate": "25%",
+            "implementation_date": "March 23, 2018",
+            "legal_basis": "Section 232 of the Trade Expansion Act of 1962"
+          }
+        },
+        {
+          "product_category": "Aluminum Articles",
+          "affected_hts_codes": [
+            "7601-7616"
+          ],
+          "country_origin": "Most Countries (with exemptions)",
+          "duty_rates": {
+            "current_rate": "10%",
+            "implementation_date": "March 23, 2018",
+            "legal_basis": "Section 232 of the Trade Expansion Act of 1962"
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "No new official changes to Section 232 tariffs have been announced as of February 13, 2025",
+    "Original Section 232 tariffs from 2018 remain in effect",
+    "Some countries have negotiated exemptions or alternative arrangements"
+  ],
+  "exempted_countries": [
+    "Argentina (quota arrangement)",
+    "Australia",
+    "Canada",
+    "Mexico",
+    "European Union (tariff-rate quota arrangement)",
+    "United Kingdom (tariff-rate quota arrangement)"
+  ],
+  "sources": [
+    "U.S. Customs and Border Protection",
+    "Department of Commerce",
+    "U.S. Trade Representative"
+  ],
+  "last_verified": "2025-02-13"
+}
