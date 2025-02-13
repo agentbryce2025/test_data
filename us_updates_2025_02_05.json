@@ -1,0 +1,24 @@
+{
+    "tariff_updates": [
+        {
+            "hts_code": "9903.01.20",
+            "full_description": "Additional duties on products related to synthetic opioid supply chain from China and Hong Kong",
+            "country_origin": ["China", "Hong Kong"],
+            "duty_changes": {
+                "type": "additional",
+                "rate": "10% ad valorem",
+                "notes": "Applies in addition to all other applicable duties, fees, and charges",
+                "exclusions": ["9903.01.21", "9903.01.22", "9903.01.23"],
+                "effective_date": "2025-02-05",
+                "source": "90 Fed. Reg. 9431 (February 12, 2025)",
+                "legal_basis": "President's February 1, 2025 Executive Order on Synthetic Opioid Supply Chain"
+            }
+        }
+    ],
+    "metadata": {
+        "revision": "HTS 2025 Revision 2",
+        "publication_date": "2025-02-12",
+        "source": "United States International Trade Commission",
+        "document_number": "Publication 5590"
+    }
+}
