@@ -1,0 +1,49 @@
+{
+    "tariff_updates": [
+        {
+            "hts_code": "7206.10 through 7216.50",
+            "full_description": "Steel products including ingots, bars, rods and angles",
+            "country_origin": "All countries except Canada and Mexico",
+            "duty_changes": {
+                "previous_rate": "0%",
+                "new_rate": "25%",
+                "effective_date": "2025-02-11"
+            }
+        },
+        {
+            "hts_code": "7216.99 through 7301.10",
+            "full_description": "Steel products including sections, wire, and sheet piling",
+            "country_origin": "All countries except Canada and Mexico",
+            "duty_changes": {
+                "previous_rate": "0%",
+                "new_rate": "25%",
+                "effective_date": "2025-02-11"
+            }
+        },
+        {
+            "hts_code": "7601.10 through 7601.20",
+            "full_description": "Unwrought aluminum",
+            "country_origin": "All countries except Canada and Mexico",
+            "duty_changes": {
+                "previous_rate": "0%",
+                "new_rate": "10%",
+                "effective_date": "2025-02-11"
+            }
+        },
+        {
+            "hts_code": "7604.10 through 7609.00",
+            "full_description": "Aluminum products including bars, rods, profiles, wire, plates, and tubes",
+            "country_origin": "All countries except Canada and Mexico",
+            "duty_changes": {
+                "previous_rate": "0%",
+                "new_rate": "10%",
+                "effective_date": "2025-02-11"
+            }
+        }
+    ],
+    "metadata": {
+        "source": "White House Fact Sheet",
+        "announcement_date": "2025-02-11",
+        "legal_basis": "Section 232 of the Trade Expansion Act of 1962"
+    }
+}
