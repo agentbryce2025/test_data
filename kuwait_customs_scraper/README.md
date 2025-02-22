@@ -56,28 +56,29 @@ sudo chmod +x /usr/local/bin/geckodriver
 
 There are three different scrapers available:
 
-1. Undetected Chrome Scraper (Recommended):
-```bash
-python src/run_undetected_scraper.py
-```
-- Uses undetected-chromedriver
-- Bypasses website security measures
-- Most reliable method
-
-2. BeautifulSoup Scraper:
-```bash
-python src/run_bs4_scraper.py
-```
-- Uses requests and BeautifulSoup4
-- Faster but may be blocked by security
-
-3. Selenium Scraper:
+1. Firefox Selenium Scraper (Recommended):
 ```bash
 python src/run_full_scraper.py
 ```
 - Uses Selenium with Firefox
-- Basic implementation
-- May be blocked by security measures
+- Stable and reliable
+- Most thoroughly tested
+
+2. Undetected Chrome Scraper (Experimental):
+```bash
+python src/run_undetected_scraper.py
+```
+- Uses undetected-chromedriver
+- May require additional setup
+- Still in development
+
+3. BeautifulSoup Scraper (Limited):
+```bash
+python src/run_bs4_scraper.py
+```
+- Uses requests and BeautifulSoup4
+- Currently blocked by website security
+- For reference only
 
 Both scrapers will:
 1. Navigate through sections, chapters, headings, and subheadings
