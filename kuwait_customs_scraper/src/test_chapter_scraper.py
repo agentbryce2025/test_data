@@ -38,10 +38,10 @@ class TestChapterScraper:
         if headless:
             options.add_argument('--headless')
         
-        # Create a new profile
-        profile = webdriver.FirefoxProfile()
-        profile.set_preference('intl.accept_languages', 'en-US, en')
-        profile.set_preference('javascript.enabled', True)
+        # Set Firefox preferences
+        options.set_preference('intl.accept_languages', 'en-US, en')
+        options.set_preference('javascript.enabled', True)
+        options.set_preference('general.useragent.override', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/120.0')
         
         options.add_argument('--no-sandbox')
         options.add_argument('--window-size=1920,1080')
@@ -50,7 +50,7 @@ class TestChapterScraper:
         options.binary_location = '/usr/bin/firefox-esr'
         
         service = Service('/usr/local/bin/geckodriver')
-        self.driver = webdriver.Firefox(service=service, options=options, firefox_profile=profile)
+        self.driver = webdriver.Firefox(service=service, options=options)
         self.wait = WebDriverWait(self.driver, 30)
         
         # Set English language cookie

@@ -1,0 +1,1 @@
+2025-02-22 22:05:09,505 - ERROR - Main script error: WebDriver.__init__() got an unexpected keyword argument 'firefox_profile'
