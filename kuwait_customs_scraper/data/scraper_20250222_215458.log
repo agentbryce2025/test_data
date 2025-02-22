@@ -1,0 +1,13 @@
+2025-02-22 21:54:58,008 - INFO - Attempt 1 to start Firefox
+2025-02-22 21:55:02,498 - INFO - Firefox started successfully
+2025-02-22 21:55:43,487 - WARNING - Key elements not found: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-02-22 21:55:44,491 - ERROR - Page load timeout
+2025-02-22 21:55:44,492 - ERROR - Error in scrape_all_codes: Failed to load search page
+2025-02-22 21:55:44,495 - INFO - Progress saved to data/kuwait_customs_data_20250222_215544.json
+2025-02-22 21:55:45,242 - ERROR - Main script error: Failed to load search page

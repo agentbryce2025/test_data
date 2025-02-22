@@ -77,9 +77,10 @@ class KuwaitCustomsFullScraper:
                 self.driver.set_window_size(1280, 1024)
                 self.driver.set_window_position(0, 0)
                 
-                # Test the browser by loading a simple page
-                self.driver.get("about:blank")
-                self.logger.info("Firefox started successfully")
+                # Test the browser by loading a known good site
+                self.driver.get("https://www.example.com")
+                self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+                self.logger.info("Firefox started and verified successfully")
                 return
                 
             except Exception as e:
@@ -110,33 +111,54 @@ class KuwaitCustomsFullScraper:
                 self.logger.warning(f"Attempt {attempt + 1} failed: {str(e)}. Retrying...")
                 time.sleep(delay * (2 ** attempt))
 
-    def ensure_page_loaded(self, url, timeout=30):
+    def ensure_page_loaded(self, url, timeout=30, max_attempts=3):
         """Ensure page is loaded completely and all elements are available"""
-        try:
-            self.driver.get(url)
+        for attempt in range(max_attempts):
+            try:
+                self.logger.info(f"Attempt {attempt + 1} to load {url}")
+                
+                # First try loading a known good site
+                self.driver.get("https://www.example.com")
+                self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+                self.logger.info("Successfully loaded example.com")
+                
+                # Now try loading the target URL
+                self.driver.get(url)
+                
+                # Wait for document ready state
+                start_time = time.time()
+                while time.time() - start_time < timeout:
+                    state = self.driver.execute_script('return document.readyState;')
+                    if state == 'complete':
+                        # Additional check for key elements
+                        try:
+                            self.wait.until(EC.presence_of_element_located((By.ID, "SectionID")))
+                            self.wait.until(EC.presence_of_element_located((By.ID, "ChapterID")))
+                            self.wait.until(EC.presence_of_element_located((By.ID, "HeadingID")))
+                            self.wait.until(EC.presence_of_element_located((By.ID, "btnSearch")))
+                            self.logger.info("All key elements found on page")
+                            return True
+                        except Exception as e:
+                            self.logger.warning(f"Key elements not found: {str(e)}")
+                            if attempt < max_attempts - 1:
+                                self.logger.info("Refreshing page...")
+                                self.driver.refresh()
+                                time.sleep(2)
+                                break
+                    time.sleep(1)
+                
+                if attempt == max_attempts - 1:
+                    self.logger.error("Page load timeout")
+                    return False
+                    
+            except Exception as e:
+                self.logger.error(f"Error loading page {url} (attempt {attempt + 1}): {str(e)}")
+                if attempt < max_attempts - 1:
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                return False
             
-            # Wait for document ready state
-            start_time = time.time()
-            while time.time() - start_time < timeout:
-                state = self.driver.execute_script('return document.readyState;')
-                if state == 'complete':
-                    # Additional check for key elements
-                    try:
-                        self.wait.until(EC.presence_of_element_located((By.ID, "SectionID")))
-                        self.wait.until(EC.presence_of_element_located((By.ID, "ChapterID")))
-                        self.wait.until(EC.presence_of_element_located((By.ID, "HeadingID")))
-                        self.wait.until(EC.presence_of_element_located((By.ID, "btnSearch")))
-                        self.logger.info("All key elements found on page")
-                        return True
-                    except Exception as e:
-                        self.logger.warning(f"Key elements not found: {str(e)}")
-                time.sleep(1)
-            
-            self.logger.error("Page load timeout")
-            return False
-        except Exception as e:
-            self.logger.error(f"Error loading page {url}: {str(e)}")
-            return False
+        return False
 
     def get_element_text(self, element, selector):
         """Safely get text from an element"""
