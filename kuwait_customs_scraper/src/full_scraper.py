@@ -35,38 +35,69 @@ class KuwaitCustomsFullScraper:
         self.logger = logging.getLogger(__name__)
 
     def setup_driver(self, headless):
-        options = Options()
-        if headless:
-            options.add_argument('--headless')
+        max_attempts = 3
+        delay = 2
+        last_error = None
         
-        # Set up Firefox profile for English language and other preferences
-        options.set_preference('intl.accept_languages', 'en-US, en')
-        options.set_preference('javascript.enabled', True)
-        options.set_preference('dom.webdriver.enabled', False)
-        options.set_preference('useAutomationExtension', False)
-        
-        # Additional settings for stability
-        options.set_preference('browser.link.open_newwindow', 3)
-        options.set_preference('browser.link.open_newwindow.restriction', 0)
-        options.set_preference('browser.tabs.remote.autostart', False)
-        options.set_preference('browser.tabs.remote.autostart.2', False)
-        
-        options.binary_location = '/usr/bin/firefox-esr'
-        
-        service = Service('/usr/local/bin/geckodriver')
-        
-        self.driver = webdriver.Firefox(
-            service=service,
-            options=options
-        )
-        
-        # Set longer timeout for slow pages
-        self.wait = WebDriverWait(self.driver, 30)
-        self.driver.set_page_load_timeout(30)
-        
-        # Set window size and position
-        self.driver.set_window_size(1280, 1024)
-        self.driver.set_window_position(0, 0)
+        for attempt in range(max_attempts):
+            try:
+                self.logger.info(f"Attempt {attempt + 1} to start Firefox")
+                
+                options = Options()
+                if headless:
+                    options.add_argument('--headless')
+                
+                # Create a fresh profile
+                profile = webdriver.FirefoxProfile()
+                
+                # Set up Firefox profile preferences
+                profile.set_preference('intl.accept_languages', 'en-US, en')
+                profile.set_preference('javascript.enabled', True)
+                profile.set_preference('dom.webdriver.enabled', False)
+                profile.set_preference('useAutomationExtension', False)
+                profile.set_preference('browser.download.folderList', 2)
+                profile.set_preference('browser.link.open_newwindow', 3)
+                
+                options.profile = profile
+                options.binary_location = '/usr/bin/firefox-esr'
+                
+                service = Service('/usr/local/bin/geckodriver')
+                service.start()
+                
+                self.driver = webdriver.Firefox(
+                    service=service,
+                    options=options
+                )
+                
+                # Set longer timeout for slow pages
+                self.wait = WebDriverWait(self.driver, 30)
+                self.driver.set_page_load_timeout(30)
+                
+                # Set window size and position
+                self.driver.set_window_size(1280, 1024)
+                self.driver.set_window_position(0, 0)
+                
+                # Test the browser by loading a simple page
+                self.driver.get("about:blank")
+                self.logger.info("Firefox started successfully")
+                return
+                
+            except Exception as e:
+                last_error = str(e)
+                self.logger.error(f"Failed to start Firefox (attempt {attempt + 1}): {str(e)}")
+                
+                # Clean up if driver was created
+                if hasattr(self, 'driver'):
+                    try:
+                        self.driver.quit()
+                    except:
+                        pass
+                
+                if attempt < max_attempts - 1:
+                    time.sleep(delay * (attempt + 1))
+                    continue
+                else:
+                    raise Exception(f"Failed to start Firefox after {max_attempts} attempts. Last error: {last_error}")
 
     def retry_function(self, func, max_retries=3, delay=2):
         """Retry a function with exponential backoff"""
