@@ -1,0 +1,10 @@
+2025-02-22 21:51:25,535 - ERROR - Error getting sections: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-02-22 21:51:26,900 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffacf0f710>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/fc696139-3a05-4a3e-a681-f848bd20a726
+2025-02-22 21:51:26,901 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffacf18650>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/fc696139-3a05-4a3e-a681-f848bd20a726
+2025-02-22 21:51:26,901 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffacf18d90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/fc696139-3a05-4a3e-a681-f848bd20a726

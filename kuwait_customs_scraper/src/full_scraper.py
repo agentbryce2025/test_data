@@ -39,15 +39,34 @@ class KuwaitCustomsFullScraper:
         if headless:
             options.add_argument('--headless')
         
+        # Set up Firefox profile for English language and other preferences
         options.set_preference('intl.accept_languages', 'en-US, en')
+        options.set_preference('javascript.enabled', True)
+        options.set_preference('dom.webdriver.enabled', False)
+        options.set_preference('useAutomationExtension', False)
+        
+        # Additional settings for stability
+        options.set_preference('browser.link.open_newwindow', 3)
+        options.set_preference('browser.link.open_newwindow.restriction', 0)
+        options.set_preference('browser.tabs.remote.autostart', False)
+        options.set_preference('browser.tabs.remote.autostart.2', False)
+        
         options.binary_location = '/usr/bin/firefox-esr'
         
         service = Service('/usr/local/bin/geckodriver')
+        
         self.driver = webdriver.Firefox(
             service=service,
             options=options
         )
-        self.wait = WebDriverWait(self.driver, 10)
+        
+        # Set longer timeout for slow pages
+        self.wait = WebDriverWait(self.driver, 30)
+        self.driver.set_page_load_timeout(30)
+        
+        # Set window size and position
+        self.driver.set_window_size(1280, 1024)
+        self.driver.set_window_position(0, 0)
 
     def retry_function(self, func, max_retries=3, delay=2):
         """Retry a function with exponential backoff"""
@@ -59,6 +78,23 @@ class KuwaitCustomsFullScraper:
                     raise
                 self.logger.warning(f"Attempt {attempt + 1} failed: {str(e)}. Retrying...")
                 time.sleep(delay * (2 ** attempt))
+
+    def ensure_page_loaded(self, url, timeout=30):
+        """Ensure page is loaded completely"""
+        try:
+            self.driver.get(url)
+            
+            # Wait for document ready state
+            start_time = time.time()
+            while time.time() - start_time < timeout:
+                if self.driver.execute_script('return document.readyState;') == 'complete':
+                    return True
+                time.sleep(0.5)
+            
+            return False
+        except Exception as e:
+            self.logger.error(f"Error loading page {url}: {str(e)}")
+            return False
 
     def get_element_text(self, element, selector):
         """Safely get text from an element"""
@@ -132,8 +168,8 @@ class KuwaitCustomsFullScraper:
     def scrape_all_codes(self):
         """Scrape all HTS codes with their duty rates and units"""
         try:
-            self.driver.get(self.search_url)
-            time.sleep(2)
+            if not self.ensure_page_loaded(self.search_url):
+                raise Exception("Failed to load search page")
 
             # Get all sections
             sections = self.get_sections()
