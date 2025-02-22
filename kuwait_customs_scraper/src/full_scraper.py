@@ -111,17 +111,28 @@ class KuwaitCustomsFullScraper:
                 time.sleep(delay * (2 ** attempt))
 
     def ensure_page_loaded(self, url, timeout=30):
-        """Ensure page is loaded completely"""
+        """Ensure page is loaded completely and all elements are available"""
         try:
             self.driver.get(url)
             
             # Wait for document ready state
             start_time = time.time()
             while time.time() - start_time < timeout:
-                if self.driver.execute_script('return document.readyState;') == 'complete':
-                    return True
-                time.sleep(0.5)
+                state = self.driver.execute_script('return document.readyState;')
+                if state == 'complete':
+                    # Additional check for key elements
+                    try:
+                        self.wait.until(EC.presence_of_element_located((By.ID, "SectionID")))
+                        self.wait.until(EC.presence_of_element_located((By.ID, "ChapterID")))
+                        self.wait.until(EC.presence_of_element_located((By.ID, "HeadingID")))
+                        self.wait.until(EC.presence_of_element_located((By.ID, "btnSearch")))
+                        self.logger.info("All key elements found on page")
+                        return True
+                    except Exception as e:
+                        self.logger.warning(f"Key elements not found: {str(e)}")
+                time.sleep(1)
             
+            self.logger.error("Page load timeout")
             return False
         except Exception as e:
             self.logger.error(f"Error loading page {url}: {str(e)}")
@@ -265,21 +276,65 @@ class KuwaitCustomsFullScraper:
 
     def get_sections(self):
         """Get all available sections from the dropdown"""
-        try:
-            section_dropdown = self.wait.until(
-                EC.presence_of_element_located((By.ID, "SectionID"))
-            )
-            options = section_dropdown.find_elements(By.TAG_NAME, "option")
-            sections = []
-            for option in options[1:]:  # Skip the first empty option
-                sections.append({
-                    'value': option.get_attribute('value'),
-                    'text': option.text
-                })
-            return sections
-        except Exception as e:
-            self.logger.error(f"Error getting sections: {str(e)}")
-            return []
+        max_attempts = 3
+        delay = 2
+        
+        for attempt in range(max_attempts):
+            try:
+                self.logger.info(f"Attempt {attempt + 1} to get sections")
+                
+                # Wait for dropdown to be both present and visible
+                section_dropdown = self.wait.until(
+                    EC.presence_of_element_located((By.ID, "SectionID"))
+                )
+                self.wait.until(
+                    EC.visibility_of_element_located((By.ID, "SectionID"))
+                )
+                
+                # Wait a bit for any dynamic content to load
+                time.sleep(2)
+                
+                # Get options
+                options = section_dropdown.find_elements(By.TAG_NAME, "option")
+                
+                if not options:
+                    self.logger.warning("No options found in section dropdown")
+                    if attempt < max_attempts - 1:
+                        # Try refreshing the page
+                        self.logger.info("Refreshing page...")
+                        self.driver.refresh()
+                        time.sleep(delay * (attempt + 1))
+                        continue
+                    else:
+                        return []
+                
+                sections = []
+                for option in options[1:]:  # Skip the first empty option
+                    value = option.get_attribute('value')
+                    text = option.text.strip()
+                    
+                    if value and text:  # Only add if both value and text are non-empty
+                        sections.append({
+                            'value': value,
+                            'text': text
+                        })
+                
+                if sections:
+                    self.logger.info(f"Successfully found {len(sections)} sections")
+                    return sections
+                else:
+                    self.logger.warning("No valid sections found")
+                    if attempt < max_attempts - 1:
+                        time.sleep(delay * (attempt + 1))
+                        continue
+                    
+            except Exception as e:
+                self.logger.error(f"Error getting sections (attempt {attempt + 1}): {str(e)}")
+                if attempt < max_attempts - 1:
+                    time.sleep(delay * (attempt + 1))
+                    continue
+        
+        return []
 
     def get_chapters(self, section_id):
         """Get chapters for a specific section"""

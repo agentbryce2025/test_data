@@ -1,0 +1,9 @@
+2025-02-22 21:53:31,776 - INFO - Attempt 1 to start Firefox
+2025-02-22 21:53:34,657 - INFO - Firefox started successfully
+2025-02-22 21:54:22,267 - ERROR - Error getting sections: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
