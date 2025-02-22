@@ -59,7 +59,25 @@ class TestChapterScraper:
             # Load the page
             self.logger.info("Loading search page...")
             self.driver.get(self.search_url)
-            time.sleep(5)  # Wait for page to load
+            
+            # Wait for page to load and check for errors
+            time.sleep(5)
+            
+            # Log the page title and any error messages
+            self.logger.info(f"Page title: {self.driver.title}")
+            self.logger.info(f"Current URL: {self.driver.current_url}")
+            
+            try:
+                error_messages = self.driver.find_elements(By.TAG_NAME, "td")
+                for msg in error_messages:
+                    if msg.text:
+                        self.logger.info(f"Found text: {msg.text}")
+            except:
+                pass
+            
+            # Take a screenshot for debugging
+            self.driver.save_screenshot("debug_screenshot.png")
+            self.logger.info("Saved debug screenshot")
 
             # Select section
             self.logger.info(f"Selecting section {section_id}...")
