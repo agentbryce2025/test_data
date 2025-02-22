@@ -1,0 +1,17 @@
+2025-02-22 22:06:53,629 - INFO - Loading search page...
+2025-02-22 22:07:00,122 - INFO - Page title: بحث التعرفة الجمركية
+2025-02-22 22:07:00,127 - INFO - Current URL: https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 22:07:00,160 - INFO - Saved initial screenshot
+2025-02-22 22:07:00,160 - INFO - Analyzing page content...
+2025-02-22 22:07:00,226 - INFO - Total elements on page: 544
+2025-02-22 22:07:00,228 - INFO - Found 2 form elements
+2025-02-22 22:07:00,239 - INFO - Form ID: 
+2025-02-22 22:07:00,243 - INFO - Form Action: https://www.customs.gov.kw/Search/Result
+2025-02-22 22:07:00,247 - INFO - Form ID: 
+2025-02-22 22:07:00,250 - INFO - Form Action: https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 22:07:00,251 - INFO - Found 0 select elements with IDs
+2025-02-22 22:07:00,252 - INFO - Found 1 elements related to sections
+2025-02-22 22:07:00,260 - INFO - Section element - Tag: input, ID: SectionCode, Name: SectionCode
+2025-02-22 22:07:00,314 - INFO - Saved page source for analysis
+2025-02-22 22:07:00,340 - ERROR - Error during scraping: Could not find section dropdown after analysis
+2025-02-22 22:07:01,054 - ERROR - Main script error: Could not find section dropdown after analysis
