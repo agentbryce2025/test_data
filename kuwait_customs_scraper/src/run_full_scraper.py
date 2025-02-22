@@ -4,7 +4,7 @@ import logging
 def main():
     try:
         # Initialize the scraper
-        scraper = KuwaitCustomsFullScraper(headless=True)
+        scraper = KuwaitCustomsFullScraper(headless=False)
         
         # Start the scraping process
         scraper.scrape_all_codes()

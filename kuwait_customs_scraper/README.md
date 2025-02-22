@@ -4,20 +4,19 @@ This project scrapes HTS codes, duty rates, and units from the Kuwait Customs we
 
 ## Features
 
-- Uses undetectable-chromedriver to bypass anti-bot detection
+- Multiple scraping methods (BeautifulSoup and Selenium-based)
 - Scrapes complete HTS codes hierarchy (sections -> chapters -> headings -> subheadings)
 - Extracts duty rates and units with smart parsing
 - Saves intermediate results after each section for data safety
 - Comprehensive error logging
-- Exports data in both JSON and CSV formats
 - Built-in retry mechanisms and proper delays
-- Support for proxy configuration
+- Support for both headless and GUI browser operation
 
 ## Requirements
 
 - Python 3.8+
-- Chrome/Chromium browser
 - Required Python packages (see requirements.txt)
+- For Selenium scraper: Firefox browser and geckodriver
 
 ## Installation
 
@@ -38,97 +37,86 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Install Chrome or Chromium browser:
+4. For Selenium scraper only - Install Firefox and geckodriver:
 ```bash
 # For Ubuntu/Debian:
 sudo apt-get update
-sudo apt-get install chromium-browser
+sudo apt-get install firefox-esr
 
-# For CentOS/RHEL:
-sudo yum install chromium
-
-# For Windows/Mac:
-Download and install Chrome from https://www.google.com/chrome/
+# Download and install geckodriver
+curl -L https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux-aarch64.tar.gz -o geckodriver.tar.gz
+tar xf geckodriver.tar.gz
+sudo mv geckodriver /usr/local/bin/
+sudo chmod +x /usr/local/bin/geckodriver
 ```
 
 ## Usage
 
-Run the new implementation:
-```bash
-cd src
-python new_main.py
-```
+There are two different scrapers available:
 
-The script will:
-1. Start an undetectable Chrome browser
-2. Navigate through all sections, chapters, headings, and subheadings
-3. Extract HTS codes, descriptions, duty rates, and units
-4. Save intermediate results after each section
-5. Generate final comprehensive dataset
+1. BeautifulSoup Scraper (Recommended):
+```bash
+python src/run_bs4_scraper.py
+```
+- Uses requests and BeautifulSoup4
+- More reliable and faster
+- Doesn't require browser installation
+
+2. Selenium Scraper:
+```bash
+python src/run_full_scraper.py
+```
+- Uses Selenium with Firefox
+- Requires Firefox and geckodriver
+- Useful for testing and verification
+
+Both scrapers will:
+1. Navigate through sections, chapters, headings, and subheadings
+2. Extract HTS codes, descriptions, duty rates, and units
+3. Save intermediate results after each section
+4. Generate timestamped output files
 
 ## Data Structure
 
-The scraper extracts:
+The scrapers extract:
 ```json
 {
     "hts_code": "string",
-    "duty_rate": "string",
-    "unit": "string",
-    "raw_duty_text": "string",
     "description": "string",
-    "section_id": "string",
-    "section_text": "string",
-    "chapter_id": "string",
-    "chapter_text": "string",
-    "heading_id": "string",
-    "heading_text": "string",
-    "subheading_id": "string",
-    "subheading_text": "string"
+    "duty_rate": "string",
+    "unit": "string"
 }
 ```
 
 ## Output Files
 
-- `data/kuwait_customs_data_complete.json`: Final complete dataset in JSON format
-- `data/kuwait_customs_data_complete.csv`: Final complete dataset in CSV format
-- `data/kuwait_customs_data_section_X_TIMESTAMP.json`: Intermediate results per section
-- `data/error_log.txt`: Detailed error log if any issues occur
+- `data/kuwait_customs_data_TIMESTAMP.json`: Complete dataset in JSON format
+- `data/scraper_TIMESTAMP.log`: Detailed log file
 
 ## Error Handling
 
 - Comprehensive error catching and logging
 - Automatic retries for common issues
 - Intermediate saves prevent data loss
-- Detailed error reporting in error_log.txt
-
-## Proxy Configuration
-
-To use residential proxies, modify undetectable_scraper.py:
-
-```python
-def setup_driver(self, headless):
-    options = uc.ChromeOptions()
-    
-    # Add proxy configuration
-    options.add_argument(f'--proxy-server=http://your_proxy_address:port')
-    # or for SOCKS5
-    # options.add_argument(f'--proxy-server=socks5://your_proxy_address:port')
-    
-    # For authenticated proxies
-    proxy_extension = self.create_proxy_extension(
-        proxy_host="proxy_host",
-        proxy_port="proxy_port",
-        proxy_username="username",
-        proxy_password="password"
-    )
-    options.add_extension(proxy_extension)
-```
+- Detailed error reporting in log files
 
 ## Best Practices
 
-- Uses undetectable-chromedriver to avoid detection
-- Implements smart rate and unit parsing
-- Saves intermediate results for data safety
-- Proper error handling and logging
-- Configurable delays between requests
-- Support for proxy configuration
+- Multiple scraping methods for reliability
+- Smart rate limiting to avoid server overload
+- Regular progress saving
+- Detailed logging for debugging
+- Configurable parameters for customization
+
+## Development
+
+The project includes two main scraping approaches:
+
+1. `bs4_scraper.py`: Uses requests and BeautifulSoup4 for a lightweight approach
+2. `full_scraper.py`: Uses Selenium for browser automation
+
+Both implementations share similar features:
+- Progress tracking
+- Error handling
+- Data validation
+- Regular saving

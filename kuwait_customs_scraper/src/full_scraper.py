@@ -40,9 +40,11 @@ class KuwaitCustomsFullScraper:
             options.add_argument('--headless')
         
         options.set_preference('intl.accept_languages', 'en-US, en')
+        options.binary_location = '/usr/bin/firefox-esr'
         
+        service = Service('/usr/local/bin/geckodriver')
         self.driver = webdriver.Firefox(
-            service=Service(GeckoDriverManager().install()),
+            service=service,
             options=options
         )
         self.wait = WebDriverWait(self.driver, 10)

@@ -1,0 +1,2 @@
+2025-02-22 21:35:54,079 - ERROR - Main script error: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
