@@ -1,0 +1,4 @@
+2025-02-22 21:39:19,658 - INFO - Successfully initialized session
+2025-02-22 21:39:20,299 - INFO - No sections found in HTML, trying API endpoint
+2025-02-22 21:39:20,529 - ERROR - Error getting sections: Expecting value: line 1 column 1 (char 0)
+2025-02-22 21:39:20,529 - INFO - Found 0 sections

@@ -25,8 +25,27 @@ class KuwaitCustomsBS4Scraper:
         })
         self.data = []
         
-        # Initialize session by visiting the main page
+        # Initialize session by visiting the main page and get verification token
         self.init_session()
+        self.get_verification_token()
+
+    def get_verification_token(self):
+        """Get the verification token from the page"""
+        try:
+            response = self.session.get(self.search_url)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            token = soup.find('input', {'name': '__RequestVerificationToken'})
+            if token:
+                self.verification_token = token['value']
+                self.session.headers.update({
+                    '__RequestVerificationToken': self.verification_token
+                })
+                self.logger.info("Successfully retrieved verification token")
+            else:
+                self.logger.warning("No verification token found")
+        except Exception as e:
+            self.logger.error(f"Error getting verification token: {str(e)}")
+            raise
 
     def init_session(self):
         """Initialize session by visiting the main page"""
@@ -73,7 +92,10 @@ class KuwaitCustomsBS4Scraper:
             if not sections:
                 self.logger.info("No sections found in HTML, trying API endpoint")
                 url = f"{self.base_url}/HSCode/GetSections"
-                response = self.session.get(url)
+                data = {"language": "en"}
+                response = self.session.post(url, json=data)
+                self.logger.info(f"API Response status: {response.status_code}")
+                self.logger.info(f"API Response content: {response.text[:500]}")
                 sections_data = response.json()
                 
                 for section in sections_data:
