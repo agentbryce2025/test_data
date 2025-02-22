@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "country": "Kuwait",
+    "source": "Kuwait General Administration of Customs",
+    "url": "https://www.customs.gov.kw/HSCode/HsCode",
+    "version": "GCC Unified Customs Tariff 2025",
+    "last_updated": "2025-01-01"
+  },
+  "tariffs": [
+    {
+      "hts_code": "01012100",
+      "rate": "5",
+      "units": "u",
+      "additional_info": "Section: Live Animals, Chapter: 01 - Live animals, Description: Pure-bred breeding horses"
+    },
+    {
+      "hts_code": "02013000",
+      "rate": "5",
+      "units": "kg",
+      "additional_info": "Section: Meat and Edible Meat Offal, Chapter: 02 - Meat of bovine animals, fresh or chilled, Description: Boneless"
+    },
+    {
+      "hts_code": "03061500",
+      "rate": "5",
+      "units": "kg",
+      "additional_info": "Section: Fish and Crustaceans, Chapter: 03 - Fish and crustaceans, molluscs and other aquatic invertebrates, Description: Norway lobsters (Nephrops norvegicus)"
+    },
+    {
+      "hts_code": "04015000",
+      "rate": "5",
+      "units": "kg",
+      "additional_info": "Section: Dairy Produce, Chapter: 04 - Dairy produce; birds' eggs; natural honey, Description: Of a fat content, by weight, exceeding 10%"
+    },
+    {
+      "hts_code": "85176200",
+      "rate": "5",
+      "units": "u",
+      "additional_info": "Section: Electrical Machinery and Equipment, Chapter: 85 - Electrical machinery and equipment and parts thereof, Description: Machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus"
+    }
+  ]
+}

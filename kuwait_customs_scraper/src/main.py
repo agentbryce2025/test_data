@@ -29,12 +29,16 @@ def main():
                 # Get the data for this chapter
                 results = scraper.search_and_get_results(section_id, chapter_id)
                 
-                # Add section and chapter info to results
+                # Reformat the results to match desired structure
                 for result in results:
-                    result['section'] = section['text']
-                    result['chapter'] = chapter['text']
+                    formatted_result = {
+                        'hts_code': result['hs_code'],
+                        'rate': result['duty_rate'].replace('%', '').strip(),
+                        'units': '',  # Kuwait customs doesn't explicitly show units in the interface
+                        'additional_info': f"Section: {section['text']}, Chapter: {chapter['text']}, Description: {result['description']}"
+                    }
                 
-                all_data.extend(results)
+                all_data.append(formatted_result)
                 
                 # Respect the website by waiting between requests
                 time.sleep(2)
