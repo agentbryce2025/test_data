@@ -4,8 +4,8 @@ import logging
 from datetime import datetime
 from pathlib import Path
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -43,10 +43,10 @@ class TestChapterScraper:
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_argument('--lang=en-US')
-        options.binary_location = '/usr/bin/chromium-browser'
+        options.binary_location = '/usr/bin/firefox-esr'
         
-        service = Service('/usr/local/bin/chromedriver')
-        self.driver = webdriver.Chrome(service=service, options=options)
+        service = Service('/usr/local/bin/geckodriver')
+        self.driver = webdriver.Firefox(service=service, options=options)
         self.wait = WebDriverWait(self.driver, 30)
 
     def wait_and_find_element(self, by, value, timeout=30):
