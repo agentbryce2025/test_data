@@ -1,0 +1,296 @@
+import time
+import json
+import logging
+from datetime import datetime
+from pathlib import Path
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from webdriver_manager.firefox import GeckoDriverManager
+
+class KuwaitCustomsFullScraper:
+    def __init__(self, headless=True, output_dir="data"):
+        self.base_url = "https://www.customs.gov.kw"
+        self.search_url = f"{self.base_url}/HSCode/HsCode"
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.setup_logging()
+        self.setup_driver(headless)
+        self.data = []
+        
+    def setup_logging(self):
+        log_file = self.output_dir / f"scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(log_file),
+                logging.StreamHandler()
+            ]
+        )
+        self.logger = logging.getLogger(__name__)
+
+    def setup_driver(self, headless):
+        options = Options()
+        if headless:
+            options.add_argument('--headless')
+        
+        options.set_preference('intl.accept_languages', 'en-US, en')
+        
+        self.driver = webdriver.Firefox(
+            service=Service(GeckoDriverManager().install()),
+            options=options
+        )
+        self.wait = WebDriverWait(self.driver, 10)
+
+    def retry_function(self, func, max_retries=3, delay=2):
+        """Retry a function with exponential backoff"""
+        for attempt in range(max_retries):
+            try:
+                return func()
+            except Exception as e:
+                if attempt == max_retries - 1:
+                    raise
+                self.logger.warning(f"Attempt {attempt + 1} failed: {str(e)}. Retrying...")
+                time.sleep(delay * (2 ** attempt))
+
+    def get_element_text(self, element, selector):
+        """Safely get text from an element"""
+        try:
+            return element.find_element(By.CSS_SELECTOR, selector).text.strip()
+        except NoSuchElementException:
+            return ""
+
+    def save_progress(self):
+        """Save current progress to a JSON file"""
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        output_file = self.output_dir / f"kuwait_customs_data_{timestamp}.json"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f, ensure_ascii=False, indent=2)
+        self.logger.info(f"Progress saved to {output_file}")
+
+    def extract_detailed_info(self, row):
+        """Extract all information from a result row"""
+        cols = row.find_elements(By.TAG_NAME, "td")
+        if not cols:
+            return None
+
+        # The website structure shows these columns:
+        # HS Code | Description | Duty Rate | Unit
+        try:
+            info = {
+                'hts_code': cols[0].text.strip(),
+                'description': cols[1].text.strip(),
+                'duty_rate': cols[2].text.strip(),
+                'unit': cols[3].text.strip() if len(cols) > 3 else '',
+            }
+            return info
+        except Exception as e:
+            self.logger.error(f"Error extracting row info: {str(e)}")
+            return None
+
+    def search_and_get_results(self, selection_dict):
+        """Perform search with the given selections and get results"""
+        try:
+            # Fill the form with provided selections
+            for field_id, value in selection_dict.items():
+                if value:
+                    self.wait.until(EC.presence_of_element_located((By.ID, field_id)))
+                    self.driver.find_element(By.ID, field_id).send_keys(value)
+                    time.sleep(1)  # Wait for AJAX
+
+            # Click search button
+            search_button = self.wait.until(
+                EC.element_to_be_clickable((By.ID, "btnSearch"))
+            )
+            search_button.click()
+            time.sleep(2)
+
+            # Get results table
+            results_table = self.wait.until(
+                EC.presence_of_element_located((By.ID, "dataTable"))
+            )
+            rows = results_table.find_elements(By.TAG_NAME, "tr")
+            
+            results = []
+            for row in rows[1:]:  # Skip header row
+                result = self.extract_detailed_info(row)
+                if result:
+                    results.append(result)
+            
+            return results
+        except Exception as e:
+            self.logger.error(f"Error performing search: {str(e)}")
+            return []
+
+    def scrape_all_codes(self):
+        """Scrape all HTS codes with their duty rates and units"""
+        try:
+            self.driver.get(self.search_url)
+            time.sleep(2)
+
+            # Get all sections
+            sections = self.get_sections()
+            
+            for section in sections:
+                section_id = section['value']
+                self.logger.info(f"Processing section {section_id}")
+                
+                # For each section, get chapters
+                chapters = self.get_chapters(section_id)
+                
+                for chapter in chapters:
+                    chapter_id = chapter['value']
+                    self.logger.info(f"Processing chapter {chapter_id}")
+                    
+                    # For each chapter, get headings
+                    headings = self.get_headings(section_id, chapter_id)
+                    
+                    for heading in headings:
+                        heading_id = heading['value']
+                        self.logger.info(f"Processing heading {heading_id}")
+                        
+                        # For each heading, get subheadings
+                        subheadings = self.get_subheadings(section_id, chapter_id, heading_id)
+                        
+                        if subheadings:
+                            for subheading in subheadings:
+                                subheading_id = subheading['value']
+                                selection_dict = {
+                                    "SectionID": section_id,
+                                    "ChapterID": chapter_id,
+                                    "HeadingID": heading_id,
+                                    "SubHeadingID": subheading_id
+                                }
+                                
+                                results = self.search_and_get_results(selection_dict)
+                                self.data.extend(results)
+                                
+                                # Save progress periodically
+                                if len(self.data) % 100 == 0:
+                                    self.save_progress()
+                                    
+                        else:
+                            # If no subheadings, search with heading
+                            selection_dict = {
+                                "SectionID": section_id,
+                                "ChapterID": chapter_id,
+                                "HeadingID": heading_id
+                            }
+                            results = self.search_and_get_results(selection_dict)
+                            self.data.extend(results)
+                
+                # Save progress after each section
+                self.save_progress()
+                
+        except Exception as e:
+            self.logger.error(f"Error in scrape_all_codes: {str(e)}")
+            self.save_progress()  # Save whatever we have
+            raise
+        finally:
+            self.close()
+
+    def get_sections(self):
+        """Get all available sections from the dropdown"""
+        try:
+            section_dropdown = self.wait.until(
+                EC.presence_of_element_located((By.ID, "SectionID"))
+            )
+            options = section_dropdown.find_elements(By.TAG_NAME, "option")
+            sections = []
+            for option in options[1:]:  # Skip the first empty option
+                sections.append({
+                    'value': option.get_attribute('value'),
+                    'text': option.text
+                })
+            return sections
+        except Exception as e:
+            self.logger.error(f"Error getting sections: {str(e)}")
+            return []
+
+    def get_chapters(self, section_id):
+        """Get chapters for a specific section"""
+        try:
+            # Select the section
+            section_dropdown = self.wait.until(
+                EC.presence_of_element_located((By.ID, "SectionID"))
+            )
+            section_dropdown.send_keys(section_id)
+            time.sleep(1)  # Wait for AJAX
+
+            # Get chapters
+            chapter_dropdown = self.wait.until(
+                EC.presence_of_element_located((By.ID, "ChapterID"))
+            )
+            options = chapter_dropdown.find_elements(By.TAG_NAME, "option")
+            chapters = []
+            for option in options[1:]:
+                chapters.append({
+                    'value': option.get_attribute('value'),
+                    'text': option.text
+                })
+            return chapters
+        except Exception as e:
+            self.logger.error(f"Error getting chapters for section {section_id}: {str(e)}")
+            return []
+
+    def get_headings(self, section_id, chapter_id):
+        """Get headings for a specific chapter"""
+        try:
+            # Select the section and chapter
+            self.driver.find_element(By.ID, "SectionID").send_keys(section_id)
+            time.sleep(1)
+            self.driver.find_element(By.ID, "ChapterID").send_keys(chapter_id)
+            time.sleep(1)
+
+            # Get headings
+            heading_dropdown = self.wait.until(
+                EC.presence_of_element_located((By.ID, "HeadingID"))
+            )
+            options = heading_dropdown.find_elements(By.TAG_NAME, "option")
+            headings = []
+            for option in options[1:]:
+                headings.append({
+                    'value': option.get_attribute('value'),
+                    'text': option.text
+                })
+            return headings
+        except Exception as e:
+            self.logger.error(f"Error getting headings for chapter {chapter_id}: {str(e)}")
+            return []
+
+    def get_subheadings(self, section_id, chapter_id, heading_id):
+        """Get subheadings for a specific heading"""
+        try:
+            # Select the section, chapter, and heading
+            self.driver.find_element(By.ID, "SectionID").send_keys(section_id)
+            time.sleep(1)
+            self.driver.find_element(By.ID, "ChapterID").send_keys(chapter_id)
+            time.sleep(1)
+            self.driver.find_element(By.ID, "HeadingID").send_keys(heading_id)
+            time.sleep(1)
+
+            # Get subheadings
+            subheading_dropdown = self.wait.until(
+                EC.presence_of_element_located((By.ID, "SubHeadingID"))
+            )
+            options = subheading_dropdown.find_elements(By.TAG_NAME, "option")
+            subheadings = []
+            for option in options[1:]:
+                subheadings.append({
+                    'value': option.get_attribute('value'),
+                    'text': option.text
+                })
+            return subheadings
+        except Exception as e:
+            self.logger.error(f"Error getting subheadings for heading {heading_id}: {str(e)}")
+            return []
+
+    def close(self):
+        """Close the browser"""
+        if hasattr(self, 'driver'):
+            self.driver.quit()
