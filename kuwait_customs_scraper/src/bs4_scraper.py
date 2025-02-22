@@ -24,6 +24,22 @@ class KuwaitCustomsBS4Scraper:
             'Referer': 'https://www.customs.gov.kw/HSCode/HsCode'
         })
         self.data = []
+        
+        # Initialize session by visiting the main page
+        self.init_session()
+
+    def init_session(self):
+        """Initialize session by visiting the main page"""
+        try:
+            response = self.session.get(self.search_url)
+            if response.status_code == 200:
+                self.logger.info("Successfully initialized session")
+                # Extract any necessary tokens from the response if needed
+            else:
+                self.logger.error(f"Failed to initialize session. Status code: {response.status_code}")
+        except Exception as e:
+            self.logger.error(f"Error initializing session: {str(e)}")
+            raise
 
     def setup_logging(self):
         log_file = self.output_dir / f"scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
@@ -40,16 +56,31 @@ class KuwaitCustomsBS4Scraper:
     def get_sections(self):
         """Get all available sections"""
         try:
-            url = f"{self.base_url}/HSCode/GetSections"
-            response = self.session.post(url)
-            sections_data = response.json()
+            # First try getting the sections from the HTML page
+            response = self.session.get(self.search_url)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            section_select = soup.find('select', {'id': 'SectionID'})
             sections = []
             
-            for section in sections_data:
-                sections.append({
-                    'value': str(section['SectionID']),
-                    'text': section['SectionDesc']
-                })
+            if section_select:
+                for option in section_select.find_all('option')[1:]:  # Skip first empty option
+                    sections.append({
+                        'value': option['value'],
+                        'text': option.text.strip()
+                    })
+            
+            # If no sections found in HTML, try the API
+            if not sections:
+                self.logger.info("No sections found in HTML, trying API endpoint")
+                url = f"{self.base_url}/HSCode/GetSections"
+                response = self.session.get(url)
+                sections_data = response.json()
+                
+                for section in sections_data:
+                    sections.append({
+                        'value': str(section['SectionID']),
+                        'text': section['SectionDesc']
+                    })
             
             return sections
         except Exception as e:
