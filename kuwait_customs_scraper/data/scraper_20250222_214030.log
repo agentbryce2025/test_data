@@ -1,0 +1,16 @@
+2025-02-22 21:40:31,717 - INFO - Successfully initialized session
+2025-02-22 21:40:32,350 - INFO - Successfully retrieved verification token
+2025-02-22 21:40:32,635 - INFO - Search Response status: 200
+2025-02-22 21:40:32,636 - INFO - Search Response content: <html><head><title> Page Error - Contact Support</title></head>
+    <body>
+        <img src="https://www.customs.gov.kw/Content/images/customs_logoArb.png" width="200" height=""80"></img>
+            <br></br>
+        <table>
+            <tbody>
+                <tr>
+                    <td>هوية الدعم / Support ID is: 618610111598896287</td>
+                </tr>
+                   <tr><td><br /></td></tr> 
+                <tr>
+                    <td><span dir="rtl">لا يُسمح بعرض الصف
+2025-02-22 21:40:32,639 - INFO - Found 0 sections

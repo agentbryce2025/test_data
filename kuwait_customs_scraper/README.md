@@ -37,38 +37,47 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. For Selenium scraper only - Install Firefox and geckodriver:
+4. Install required browsers:
 ```bash
 # For Ubuntu/Debian:
 sudo apt-get update
-sudo apt-get install firefox-esr
+sudo apt-get install firefox-esr chromium-browser
 
-# Download and install geckodriver
+# For Firefox Selenium scraper - Install geckodriver
 curl -L https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux-aarch64.tar.gz -o geckodriver.tar.gz
 tar xf geckodriver.tar.gz
 sudo mv geckodriver /usr/local/bin/
 sudo chmod +x /usr/local/bin/geckodriver
+
+# Note: The recommended undetected-chromedriver will automatically handle Chromium/Chrome setup
 ```
 
 ## Usage
 
-There are two different scrapers available:
+There are three different scrapers available:
 
-1. BeautifulSoup Scraper (Recommended):
+1. Undetected Chrome Scraper (Recommended):
+```bash
+python src/run_undetected_scraper.py
+```
+- Uses undetected-chromedriver
+- Bypasses website security measures
+- Most reliable method
+
+2. BeautifulSoup Scraper:
 ```bash
 python src/run_bs4_scraper.py
 ```
 - Uses requests and BeautifulSoup4
-- More reliable and faster
-- Doesn't require browser installation
+- Faster but may be blocked by security
 
-2. Selenium Scraper:
+3. Selenium Scraper:
 ```bash
 python src/run_full_scraper.py
 ```
 - Uses Selenium with Firefox
-- Requires Firefox and geckodriver
-- Useful for testing and verification
+- Basic implementation
+- May be blocked by security measures
 
 Both scrapers will:
 1. Navigate through sections, chapters, headings, and subheadings
