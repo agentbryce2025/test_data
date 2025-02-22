@@ -1,0 +1,35 @@
+2025-02-22 21:56:13,552 - INFO - Attempt 1 to start Firefox
+2025-02-22 21:56:17,967 - INFO - Firefox started and verified successfully
+2025-02-22 21:56:17,971 - INFO - Attempt 1 to load https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 21:56:18,184 - INFO - Successfully loaded example.com
+2025-02-22 21:57:01,674 - WARNING - Key elements not found: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-02-22 21:57:01,675 - INFO - Refreshing page...
+2025-02-22 21:57:15,556 - INFO - Attempt 2 to load https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 21:57:15,648 - INFO - Successfully loaded example.com
+2025-02-22 21:57:46,537 - WARNING - Key elements not found: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-02-22 21:57:46,538 - INFO - Refreshing page...
+2025-02-22 21:58:01,891 - INFO - Attempt 3 to load https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 21:58:02,008 - INFO - Successfully loaded example.com
+2025-02-22 21:58:33,065 - WARNING - Key elements not found: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-02-22 21:58:34,070 - ERROR - Page load timeout
+2025-02-22 21:58:34,078 - ERROR - Error in scrape_all_codes: Failed to load search page
+2025-02-22 21:58:34,081 - INFO - Progress saved to data/kuwait_customs_data_20250222_215834.json
+2025-02-22 21:58:35,038 - ERROR - Main script error: Failed to load search page
