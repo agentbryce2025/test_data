@@ -38,16 +38,29 @@ class TestChapterScraper:
         if headless:
             options.add_argument('--headless')
         
+        # Create a new profile
+        profile = webdriver.FirefoxProfile()
+        profile.set_preference('intl.accept_languages', 'en-US, en')
+        profile.set_preference('javascript.enabled', True)
+        
         options.add_argument('--no-sandbox')
         options.add_argument('--window-size=1920,1080')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-blink-features=AutomationControlled')
-        options.add_argument('--lang=en-US')
         options.binary_location = '/usr/bin/firefox-esr'
         
         service = Service('/usr/local/bin/geckodriver')
-        self.driver = webdriver.Firefox(service=service, options=options)
+        self.driver = webdriver.Firefox(service=service, options=options, firefox_profile=profile)
         self.wait = WebDriverWait(self.driver, 30)
+        
+        # Set English language cookie
+        self.driver.get(self.base_url)
+        self.driver.add_cookie({
+            'name': 'language',
+            'value': 'en',
+            'path': '/',
+            'domain': '.customs.gov.kw'
+        })
 
     def wait_and_find_element(self, by, value, timeout=30):
         """Wait for and find an element"""
@@ -67,23 +80,44 @@ class TestChapterScraper:
             self.logger.info(f"Page title: {self.driver.title}")
             self.logger.info(f"Current URL: {self.driver.current_url}")
             
-            try:
-                error_messages = self.driver.find_elements(By.TAG_NAME, "td")
-                for msg in error_messages:
-                    if msg.text:
-                        self.logger.info(f"Found text: {msg.text}")
-            except:
-                pass
-            
-            # Take a screenshot for debugging
-            self.driver.save_screenshot("debug_screenshot.png")
-            self.logger.info("Saved debug screenshot")
+            # Take screenshot before any actions
+            self.driver.save_screenshot("before_action.png")
+            self.logger.info("Saved initial screenshot")
 
-            # Select section
-            self.logger.info(f"Selecting section {section_id}...")
-            section_select = self.wait_and_find_element(By.ID, "SectionID")
-            section_select.send_keys(section_id)
+            # Try to find the section dropdown using various methods
+            try:
+                # Method 1: Direct ID
+                section_select = self.driver.find_element(By.ID, "SectionID")
+                self.logger.info("Found section dropdown by ID")
+            except:
+                try:
+                    # Method 2: Try finding selects
+                    selects = self.driver.find_elements(By.TAG_NAME, "select")
+                    self.logger.info(f"Found {len(selects)} select elements")
+                    
+                    if selects:
+                        section_select = selects[0]  # First select should be section
+                    else:
+                        raise Exception("No select elements found")
+                except Exception as e:
+                    self.logger.error(f"Could not find section dropdown: {str(e)}")
+                    # Take screenshot of failure
+                    self.driver.save_screenshot("error_state.png")
+                    raise
+
+            # Print current selected value
+            self.logger.info(f"Current section value: {section_select.get_attribute('value')}")
+            
+            # Try to change the value
+            self.driver.execute_script(
+                "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('change'));",
+                section_select, section_id
+            )
             time.sleep(2)
+
+            # Take screenshot after action
+            self.driver.save_screenshot("after_action.png")
+            self.logger.info("Saved action screenshot")
 
             # Select chapter
             self.logger.info(f"Selecting chapter {chapter_id}...")

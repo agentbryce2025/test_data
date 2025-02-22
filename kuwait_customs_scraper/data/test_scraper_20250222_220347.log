@@ -1,0 +1,49 @@
+2025-02-22 22:03:50,548 - INFO - Loading search page...
+2025-02-22 22:04:08,391 - INFO - Page title: بحث التعرفة الجمركية
+2025-02-22 22:04:08,395 - INFO - Current URL: https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 22:04:08,441 - INFO - Found text: اختار
+2025-02-22 22:04:08,452 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,462 - INFO - Found text: ذكور خيول من اصل عربي للأنسال
+2025-02-22 22:04:08,472 - INFO - Found text: اختار
+2025-02-22 22:04:08,480 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,488 - INFO - Found text: إناث خيول من أصل عربي للأنسال
+2025-02-22 22:04:08,498 - INFO - Found text: اختار
+2025-02-22 22:04:08,508 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,516 - INFO - Found text: ذكور خيول من أصل غير عربي للأنسال
+2025-02-22 22:04:08,525 - INFO - Found text: اختار
+2025-02-22 22:04:08,534 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,543 - INFO - Found text: إناث خيول من أصل غير عربي للأنسال
+2025-02-22 22:04:08,551 - INFO - Found text: اختار
+2025-02-22 22:04:08,558 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,564 - INFO - Found text: ذكور خيول من أصل عربي للرياضة
+2025-02-22 22:04:08,572 - INFO - Found text: اختار
+2025-02-22 22:04:08,579 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,586 - INFO - Found text: إناث خيول من أصل عربي للرياضة
+2025-02-22 22:04:08,593 - INFO - Found text: اختار
+2025-02-22 22:04:08,601 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,608 - INFO - Found text: ذكور خيول من أصل غير عربي للرياضة
+2025-02-22 22:04:08,616 - INFO - Found text: اختار
+2025-02-22 22:04:08,623 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,631 - INFO - Found text: إناث خيول من أصل غير عربي للرياضة
+2025-02-22 22:04:08,639 - INFO - Found text: اختار
+2025-02-22 22:04:08,646 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,653 - INFO - Found text: خيول صغيرة الجسم (بوني) ذكور
+2025-02-22 22:04:08,661 - INFO - Found text: اختار
+2025-02-22 22:04:08,668 - INFO - Found text: 0.00 %
+2025-02-22 22:04:08,675 - INFO - Found text: خيول صغيرة الجسم (بوني) إناث
+2025-02-22 22:04:08,694 - INFO - Saved debug screenshot
+2025-02-22 22:04:08,694 - INFO - Selecting section 1...
+2025-02-22 22:04:38,785 - ERROR - Error during scraping: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-02-22 22:04:39,532 - ERROR - Main script error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
