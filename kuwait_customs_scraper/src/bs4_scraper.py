@@ -19,7 +19,7 @@ class KuwaitCustomsBS4Scraper:
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Language': 'en-US,en;q=0.9',
             'X-Requested-With': 'XMLHttpRequest',
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
             'Origin': 'https://www.customs.gov.kw',
             'Referer': 'https://www.customs.gov.kw/HSCode/HsCode'
         })
@@ -75,8 +75,21 @@ class KuwaitCustomsBS4Scraper:
     def get_sections(self):
         """Get all available sections"""
         try:
-            # First try getting the sections from the HTML page
-            response = self.session.get(self.search_url)
+            # Make a general search to get all sections
+            data = {
+                'sectionId': '',
+                'chapterId': '',
+                'headingId': '',
+                'subHeadingId': '',
+                'hsCodeId': '',
+                'searchText': ''
+            }
+            url = f"{self.base_url}/HSCode/Search"
+            response = self.session.post(url, data=data)
+            
+            self.logger.info(f"Search Response status: {response.status_code}")
+            self.logger.info(f"Search Response content: {response.text[:500]}")
+            
             soup = BeautifulSoup(response.text, 'html.parser')
             section_select = soup.find('select', {'id': 'SectionID'})
             sections = []
@@ -87,22 +100,7 @@ class KuwaitCustomsBS4Scraper:
                         'value': option['value'],
                         'text': option.text.strip()
                     })
-            
-            # If no sections found in HTML, try the API
-            if not sections:
-                self.logger.info("No sections found in HTML, trying API endpoint")
-                url = f"{self.base_url}/HSCode/GetSections"
-                data = {"language": "en"}
-                response = self.session.post(url, json=data)
-                self.logger.info(f"API Response status: {response.status_code}")
-                self.logger.info(f"API Response content: {response.text[:500]}")
-                sections_data = response.json()
-                
-                for section in sections_data:
-                    sections.append({
-                        'value': str(section['SectionID']),
-                        'text': section['SectionDesc']
-                    })
+                self.logger.info(f"Found {len(sections)} sections")
             
             return sections
         except Exception as e:
@@ -158,7 +156,7 @@ class KuwaitCustomsBS4Scraper:
                 'searchText': ''
             }
             
-            response = self.session.post(url, json=data)
+            response = self.session.post(url, data=data)
             results_data = response.json()
             
             results = []

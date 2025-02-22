@@ -1,0 +1,18 @@
+2025-02-22 21:39:48,282 - INFO - Successfully initialized session
+2025-02-22 21:39:48,934 - INFO - Successfully retrieved verification token
+2025-02-22 21:39:49,586 - INFO - No sections found in HTML, trying API endpoint
+2025-02-22 21:39:49,826 - INFO - API Response status: 200
+2025-02-22 21:39:49,827 - INFO - API Response content: <html><head><title> Page Error - Contact Support</title></head>
+    <body>
+        <img src="https://www.customs.gov.kw/Content/images/customs_logoArb.png" width="200" height=""80"></img>
+            <br></br>
+        <table>
+            <tbody>
+                <tr>
+                    <td>هوية الدعم / Support ID is: 7610368065802598852</td>
+                </tr>
+                   <tr><td><br /></td></tr> 
+                <tr>
+                    <td><span dir="rtl">لا يُسمح بعرض الص
+2025-02-22 21:39:49,827 - ERROR - Error getting sections: Expecting value: line 1 column 1 (char 0)
+2025-02-22 21:39:49,827 - INFO - Found 0 sections
