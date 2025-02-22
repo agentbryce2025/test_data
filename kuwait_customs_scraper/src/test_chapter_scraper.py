@@ -85,25 +85,49 @@ class TestChapterScraper:
             self.logger.info("Saved initial screenshot")
 
             # Try to find the section dropdown using various methods
+            # Analyze page content
+            self.logger.info("Analyzing page content...")
+            
+            # Get all elements
+            elements = self.driver.find_elements(By.XPATH, "//*")
+            self.logger.info(f"Total elements on page: {len(elements)}")
+            
+            # Look for form elements
+            forms = self.driver.find_elements(By.TAG_NAME, "form")
+            self.logger.info(f"Found {len(forms)} form elements")
+            for form in forms:
+                self.logger.info(f"Form ID: {form.get_attribute('id')}")
+                self.logger.info(f"Form Action: {form.get_attribute('action')}")
+            
+            # Look for select elements with any ID
+            selects = self.driver.find_elements(By.XPATH, "//select[@id]")
+            self.logger.info(f"Found {len(selects)} select elements with IDs")
+            for select in selects:
+                self.logger.info(f"Select ID: {select.get_attribute('id')}")
+            
+            # Look for elements with 'section' in their ID or name
+            section_elements = self.driver.find_elements(
+                By.XPATH, 
+                "//*[contains(@id, 'section') or contains(@id, 'Section') or contains(@name, 'section') or contains(@name, 'Section')]"
+            )
+            self.logger.info(f"Found {len(section_elements)} elements related to sections")
+            for elem in section_elements:
+                self.logger.info(f"Section element - Tag: {elem.tag_name}, ID: {elem.get_attribute('id')}, Name: {elem.get_attribute('name')}")
+            
+            # Get the page source for analysis
+            with open("page_source.html", "w", encoding="utf-8") as f:
+                f.write(self.driver.page_source)
+            self.logger.info("Saved page source for analysis")
+            
+            # Take a screenshot
+            self.driver.save_screenshot("page_analysis.png")
+            
+            # Try to find the section dropdown
             try:
-                # Method 1: Direct ID
                 section_select = self.driver.find_element(By.ID, "SectionID")
                 self.logger.info("Found section dropdown by ID")
             except:
-                try:
-                    # Method 2: Try finding selects
-                    selects = self.driver.find_elements(By.TAG_NAME, "select")
-                    self.logger.info(f"Found {len(selects)} select elements")
-                    
-                    if selects:
-                        section_select = selects[0]  # First select should be section
-                    else:
-                        raise Exception("No select elements found")
-                except Exception as e:
-                    self.logger.error(f"Could not find section dropdown: {str(e)}")
-                    # Take screenshot of failure
-                    self.driver.save_screenshot("error_state.png")
-                    raise
+                raise Exception("Could not find section dropdown after analysis")
 
             # Print current selected value
             self.logger.info(f"Current section value: {section_select.get_attribute('value')}")

@@ -1,0 +1,8 @@
+2025-02-22 22:05:55,286 - INFO - Loading search page...
+2025-02-22 22:06:01,932 - INFO - Page title: بحث التعرفة الجمركية
+2025-02-22 22:06:01,935 - INFO - Current URL: https://www.customs.gov.kw/HSCode/HsCode
+2025-02-22 22:06:01,983 - INFO - Saved initial screenshot
+2025-02-22 22:06:01,993 - INFO - Found 0 select elements
+2025-02-22 22:06:01,993 - ERROR - Could not find section dropdown: No select elements found
+2025-02-22 22:06:02,059 - ERROR - Error during scraping: No select elements found
+2025-02-22 22:06:02,905 - ERROR - Main script error: No select elements found
