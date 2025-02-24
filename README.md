@@ -54,3 +54,18 @@ If the scraper fails:
 2. Verify Firefox is installed
 3. Check if the websites are accessible in your browser
 4. Try running without headless mode for debugging
+
+## macOS-Specific Instructions
+
+For macOS users:
+1. Install Firefox if not already installed:
+```bash
+brew install firefox
+```
+
+2. Use the macOS-specific script:
+```bash
+python run_scrapers_mac.py
+```
+
+This version will automatically detect the Firefox installation on macOS and use the correct binary location.
