@@ -1,20 +1,42 @@
-# Trade News RSS Scraper
+# Trade News Scraper
 
-A Python scraper that collects trade-related news from Reuters RSS feeds and Global Trade Alert search results.
+A Python scraper that collects trade-related news from the World Trade Organization (WTO) website.
+
+## Background
+
+This scraper was developed after finding that Reuters and Global Trade Alert websites have implemented strong anti-scraping measures. Instead, it focuses on the WTO website, which provides reliable trade-related news and announcements.
+
+## Alternative Data Sources
+
+For Reuters and GTA data, consider:
+
+1. Official APIs:
+   - Reuters Connect API: https://www.reutersagency.com/en/products/reuters-connect/
+   - Contact GTA for API access
+
+2. News Aggregator APIs:
+   - NewsAPI.org
+   - Google News API
+   - Event Registry API
+
+3. Other Trade Sources:
+   - Government trade websites
+   - Trade policy monitoring organizations
+   - International trade organizations
 
 ## Features
 
-- Uses Reuters RSS feeds for reliable article access
-- Searches GTA website for recent announcements
-- Automatic filtering for trade-related content
-- Date-based filtering for last week's content
-- HTML cleaning and text normalization
-- Comprehensive error handling and logging
+- Scrapes WTO news and announcements
+- Automatic date parsing for various formats
+- Filters for content from the last 7 days
+- URL normalization
+- Comprehensive error handling
+- Detailed logging
 
 ## Requirements
 
 - Python 3.7+
-- Required packages: feedparser, requests, beautifulsoup4, python-dateutil
+- Required packages: requests, beautifulsoup4
 
 ## Installation
 
@@ -25,71 +47,52 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python rss_scraper.py
+python wto_scraper.py
 ```
 
 This will:
-1. Fetch articles from Reuters RSS feeds
-2. Search GTA website for recent announcements
-3. Filter for trade-related content
-4. Save results to `trade_news.json`
-
-## Trade-Related Keywords
-
-The scraper looks for content containing:
-- trade
-- tariff
-- import
-- export
-- customs
-- duty
-- wto
-- trade war
-- trade dispute
-- trade agreement
+1. Fetch recent news from WTO website
+2. Filter for content from the last 7 days
+3. Save results to `trade_news.json`
 
 ## Output Format
 
 ```json
 {
     "timestamp": "2025-02-24T10:00:00.000000",
-    "reuters_articles": [
+    "wto_news": [
         {
-            "title": "Article Title",
-            "url": "Article URL",
-            "date": "2025-02-24T10:00:00Z",
-            "description": "Article description",
-            "source": "Reuters"
-        }
-    ],
-    "gta_announcements": [
-        {
-            "title": "Announcement Title",
+            "title": "News Title",
+            "url": "News URL",
             "date": "2025-02-24",
-            "description": "Announcement description",
-            "source": "Global Trade Alert"
+            "description": "News description",
+            "source": "WTO"
         }
     ]
 }
 ```
 
-## Debugging
+## Next Steps
 
-The scraper saves:
-- GTA search results in `gta_search.html`
-- Detailed log output
+To get comprehensive trade news coverage, consider:
 
-## Error Handling
+1. Registering for official APIs:
+   - Reuters Connect
+   - NewsAPI.org
+   - Event Registry
 
-The scraper includes:
-- Multiple RSS feed attempts
-- HTML cleaning and normalization
-- Comprehensive error logging
-- Data validation and filtering
+2. Adding more sources:
+   - UNCTAD (United Nations Conference on Trade and Development)
+   - National trade ministry websites
+   - Regional trade organization websites
+
+3. Setting up automated monitoring:
+   - Email notifications for new items
+   - Database storage for historical tracking
+   - API endpoint for data access
 
 ## Notes
 
-- Uses RSS feeds for more reliable access
-- Implements text cleaning and normalization
-- Filters content based on trade-related keywords
-- Ensures content is from the last 7 days
+- The current implementation focuses on WTO news
+- Additional sources can be added as needed
+- Consider API-based solutions for Reuters and GTA data
