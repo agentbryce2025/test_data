@@ -1,0 +1,99 @@
+{
+  "entries": [
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Description in English": "Live horses, asses, mules and hinnies.",
+      "Description in Arabic": "خيل، وبغال وحمير حية.",
+      "Duty Rate": null,
+      "H.S. Code": "01.01"
+    },
+    {
+      "SFTA": null,
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Horses :",
+      "Description in Arabic": "خيل :",
+      "Duty Rate": null,
+      "H.S. Code": null
+    },
+    {
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Pure-bred breeding animals:",
+      "Description in Arabic": "حيوانات طافرة نقية للتناسل:",
+      "Duty Rate": "0%",
+      "H.S. Code": "01 01 21 00 00"
+    },
+    {
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Of Arab breed :",
+      "Description in Arabic": "من ذات السلالة العربية :",
+      "Duty Rate": "0%",
+      "H.S. Code": "01 01 21 10 00"
+    },
+    {
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Of other Arab breeds",
+      "Description in Arabic": "من غير ذات السلالة العربية",
+      "Duty Rate": "0%",
+      "H.S. Code": "01 01 21 90 00"
+    },
+    {
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Other",
+      "Description in Arabic": "غيرها",
+      "Duty Rate": "0%",
+      "H.S. Code": "01 01 29 00 00"
+    },
+    {
+      "SFTA": null,
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Horses for sport :",
+      "Description in Arabic": "خيول للرياضة :",
+      "Duty Rate": "0%",
+      "H.S. Code": null
+    },
+    {
+      "SFTA": null,
+      "SG": "A",
+      "URA": null,
+      "Description in English": "Live bovine animals.",
+      "Description in Arabic": "الأبقار الحية.",
+      "Duty Rate": null,
+      "H.S. Code": "01.02"
+    },
+    {
+      "SFTA": null,
+      "SG": "C",
+      "URA": "F",
+      "Description in English": "Live swine.",
+      "Description in Arabic": "الخنازير الحية.",
+      "Duty Rate": "PROHIBITED",
+      "H.S. Code": "01.03"
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Description in English": "Live sheep and goats.",
+      "Description in Arabic": "الأغنام والماعز الحية.",
+      "Duty Rate": null,
+      "H.S. Code": "01.04"
+    }
+  ],
+  "metadata": [
+    "Section I: LIVE ANIMALS; ANIMAL PRODUCTS",
+    "Chapter 1: Live animals"
+  ],
+  "page_number": 1
+}

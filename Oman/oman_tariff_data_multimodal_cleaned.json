@@ -1,0 +1,102 @@
+{
+  "document_name": "Oman Customs Tariff",
+  "source": "https://www.customs.gov.om/media/idwfzthg/tarfah.pdf",
+  "entries": [
+    {
+      "H.S. Code": "01 01",
+      "Description in English": "Live horses, asses, mules and hinnies.",
+      "Description in Arabic": "خيل، وبغال وحمير حية.",
+      "Duty Rate": null,
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 01 21 00 00",
+      "Description in English": "Pure-bred breeding animals:",
+      "Description in Arabic": "حيوانات طافرة نقية للتناسل:",
+      "Duty Rate": "0%",
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 01 21 10 00",
+      "Description in English": "Of Arab breed :",
+      "Description in Arabic": "من ذات السلالة العربية :",
+      "Duty Rate": "0%",
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 01 21 90 00",
+      "Description in English": "Of other Arab breeds",
+      "Description in Arabic": "من غير ذات السلالة العربية",
+      "Duty Rate": "0%",
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 01 29 00 00",
+      "Description in English": "Other",
+      "Description in Arabic": "غيرها",
+      "Duty Rate": "0%",
+      "SFTA": "B",
+      "SG": "A",
+      "URA": null,
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 02",
+      "Description in English": "Live bovine animals.",
+      "Description in Arabic": "الأبقار الحية.",
+      "Duty Rate": null,
+      "SFTA": null,
+      "SG": "A",
+      "URA": null,
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 03",
+      "Description in English": "Live swine.",
+      "Description in Arabic": "الخنازير الحية.",
+      "Duty Rate": "PROHIBITED",
+      "SFTA": null,
+      "SG": "C",
+      "URA": "F",
+      "page_number": 1
+    },
+    {
+      "H.S. Code": "01 04",
+      "Description in English": "Live sheep and goats.",
+      "Description in Arabic": "الأغنام والماعز الحية.",
+      "Duty Rate": null,
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "page_number": 1
+    }
+  ],
+  "metadata": [
+    {
+      "content": "Section I: LIVE ANIMALS; ANIMAL PRODUCTS",
+      "page_number": 1
+    },
+    {
+      "content": "Chapter 1: Live animals",
+      "page_number": 1
+    }
+  ],
+  "statistics": {
+    "total_entries": 8,
+    "entries_with_duty_rate": 5,
+    "unique_hs_codes": 8,
+    "pages_processed": 1
+  }
+}
