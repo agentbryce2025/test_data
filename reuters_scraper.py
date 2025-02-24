@@ -1,40 +1,72 @@
-import feedparser
+import requests
 from datetime import datetime, timedelta
 import json
+from bs4 import BeautifulSoup
 import time
 
 class ReutersScraper:
     def __init__(self):
-        self.feed_url = "https://www.reuters.com/rss/businessNews"
+        self.url = "https://www.reuters.com/business/tariffs/"
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
 
     def get_last_week_articles(self):
-        print("Fetching Reuters RSS feed...")
-        feed = feedparser.parse(self.feed_url)
         articles = []
-        
-        one_week_ago = datetime.now() - timedelta(days=7)
-        
-        for entry in feed.entries:
-            try:
-                # Parse the publication date
-                pub_date = datetime(*entry.published_parsed[:6])
-                
-                if pub_date >= one_week_ago:
-                    # Check if the article is related to tariffs/trade
-                    if any(keyword in entry.title.lower() or keyword in entry.description.lower() 
-                           for keyword in ['tariff', 'trade', 'import', 'export', 'duty', 'customs']):
-                        articles.append({
-                            "title": entry.title,
-                            "url": entry.link,
-                            "date": entry.published,
-                            "description": entry.description,
-                            "source": "Reuters"
-                        })
-                        print(f"Found relevant article: {entry.title}")
-            except Exception as e:
-                print(f"Error processing entry: {e}")
-                continue
-                
+        try:
+            print("Fetching Reuters articles...")
+            response = requests.get(self.url, headers=self.headers)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Store the page content for debugging
+            with open('reuters_debug.html', 'w', encoding='utf-8') as f:
+                f.write(response.text)
+            
+            # Find all story elements
+            story_elements = soup.find_all('div', {'data-testid': 'story-card'})
+            print(f"Found {len(story_elements)} story elements")
+            
+            one_week_ago = datetime.now() - timedelta(days=7)
+            
+            for story in story_elements:
+                try:
+                    # Extract title and link
+                    title_element = story.find('a', {'data-testid': 'Heading'})
+                    if not title_element:
+                        continue
+                        
+                    title = title_element.text.strip()
+                    link = 'https://www.reuters.com' + title_element['href']
+                    
+                    # Extract date
+                    time_element = story.find('time')
+                    if time_element and 'datetime' in time_element.attrs:
+                        date_str = time_element['datetime']
+                        article_date = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+                        
+                        if article_date >= one_week_ago:
+                            # Extract description
+                            description = ''
+                            desc_element = story.find('p', {'data-testid': 'Paragraph'})
+                            if desc_element:
+                                description = desc_element.text.strip()
+                            
+                            articles.append({
+                                "title": title,
+                                "url": link,
+                                "date": date_str,
+                                "description": description,
+                                "source": "Reuters"
+                            })
+                            print(f"Added article: {title}")
+                            
+                except Exception as e:
+                    print(f"Error processing story: {e}")
+                    continue
+                    
+        except Exception as e:
+            print(f"Error scraping Reuters: {e}")
+            
         return articles
 
     def save_to_json(self, articles, filename="reuters_articles.json"):
