@@ -1,52 +1,38 @@
-# Advanced Trade News Scraper
+# Trade News API Scraper
 
-A sophisticated Python scraper that collects trade-related news from Reuters and Global Trade Alert using modern web automation techniques.
+A Python scraper that collects trade-related news from Reuters and Global Trade Alert using their API endpoints.
 
 ## Features
 
-- Advanced web automation using Playwright
-- Multiple fallback methods for finding content
-- Intelligent date extraction from various formats
-- Keyword-based filtering for trade-related content
+- Uses official APIs where available
+- Multiple fallback methods
+- Automatic filtering for trade-related content
+- Date-based filtering for last week's content
 - Comprehensive error handling and logging
-- Screenshot capture for debugging
-- Deduplication of content
+- Debug output for troubleshooting
 
 ## Requirements
 
-1. Python 3.7+
-2. Playwright and its dependencies
+- Python 3.7+
+- Required packages: requests, python-dateutil
 
 ## Installation
 
-1. Run the setup script:
-```bash
-./setup.sh
-```
-
-Or manually:
-
-1. Install Python requirements:
 ```bash
 pip install -r requirements.txt
-```
-
-2. Install Playwright browsers:
-```bash
-playwright install chromium
 ```
 
 ## Usage
 
 ```bash
-python advanced_scraper.py
+python api_scraper.py
 ```
 
 This will:
-1. Scrape Reuters for trade-related articles
-2. Scrape Global Trade Alert for announcements
-3. Save results to `trade_news.json`
-4. Save debug screenshots for troubleshooting
+1. Fetch recent articles from Reuters API
+2. Fetch announcements from GTA API
+3. Filter for trade-related content
+4. Save results to `trade_news.json`
 
 ## Output Format
 
@@ -67,6 +53,7 @@ This will:
             "title": "Announcement Title",
             "date": "2025-02-24",
             "description": "Announcement description",
+            "implementing_country": "Country Name",
             "source": "Global Trade Alert"
         }
     ]
@@ -75,23 +62,21 @@ This will:
 
 ## Debugging
 
-The scraper saves several debug files:
-- `reuters_*.png`: Screenshots of Reuters pages
-- `gta_main.png`: Screenshot of GTA homepage
-- Log output with detailed information
+The scraper saves API responses for debugging:
+- `reuters_api_*.json`: Reuters API responses
+- `gta_api_*.json`: GTA API responses
 
-## Troubleshooting
+## Error Handling
 
-If the scraper fails:
-1. Check the debug screenshots
-2. Look for error messages in the log output
-3. Try running without headless mode by changing `headless=True` to `headless=False`
-4. Increase wait times if content isn't loading
-5. Check if the website structure has changed
+The scraper includes:
+- Multiple API endpoint attempts
+- Comprehensive error logging
+- Graceful degradation if endpoints fail
+- Data validation and filtering
 
 ## Notes
 
-- The scraper uses advanced selectors to find content
-- Implements intelligent date parsing
+- Uses official APIs where available
+- Implements multiple fallback methods
 - Filters content based on trade-related keywords
-- Handles dynamic web pages with proper waiting
+- Ensures content is from the last 7 days

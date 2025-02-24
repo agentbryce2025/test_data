@@ -1,2 +1,2 @@
-playwright==1.41.2
+requests==2.31.2
 python-dateutil==2.8.2
