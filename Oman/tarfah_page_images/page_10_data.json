@@ -1,0 +1,155 @@
+{
+  "entries": [
+    {
+      "H.S. Code": "03 04 59 10 00 00",
+      "Description": "Spotted Groupers",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 59 20 00 00",
+      "Description": "Emperors",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 59 99 00 00",
+      "Description": "Other",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 61 00 00 00",
+      "Description": "Tilapias (Oreoichromis spp.) catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 62 00 00 00",
+      "Description": "Catfish (Pangasius spp., Silurus spp., Ictalurus spp.)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 63 00 00 00",
+      "Description": "Nile Perch (Lates niloticus)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 69 00 00 00",
+      "Description": "Other",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 71 00 00 00",
+      "Description": "Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 72 00 00 00",
+      "Description": "Haddock (Melanogrammus aeglefinus)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 73 00 00 00",
+      "Description": "Coalfish (Pollachius virens)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 74 00 00 00",
+      "Description": "Hake (Merluccius spp., Urophycis spp.)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 79 10 00 00",
+      "Description": "Alaska Pollock (Theragra chalcogramma)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 79 90 00 00",
+      "Description": "Other",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 81 00 00 00",
+      "Description": "Pacific salmon (Oncorhynchus nerka, Oncorhynchus gorbuscha, Oncorhynchus tshawytscha, Oncorhynchus keta, Oncorhynchus kisutch, Oncorhynchustschawytscha, Oncorhynchus masou and Oncorhynchus rhodurus)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 82 00 00 00",
+      "Description": "Trout (Salmo trutta, Oncorhynchus mykiss, Oncorhynchus clarkii, Oncorhynchus aguabonita, Oncorhynchus gilae, Oncorhynchuschupaschiae and Oncorhynchus chrysogaster)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 83 00 00 00",
+      "Description": "Flat fish (Pleuronectide, Bothidae, Cynoglossidae, Soleidae, Scophthalmidae and Citharidae)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 84 00 00 00",
+      "Description": "Swordfish (Xiphias gladius)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 85 00 00 00",
+      "Description": "Toothfish (Dissostichus spp.)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 87 00 00 00",
+      "Description": "Tunas of the genus Thunnus, skipjack tuna (Euthynnus (Katsuwonus) pelamis)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 89 10 00 00",
+      "Description": "Sharks",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 89 30 00 00",
+      "Description": "Dogfish and other sharks",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 89 90 00 00",
+      "Description": "Other",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 92 00 00 00",
+      "Description": "Alaska Pollock (Theragra chalcogramma) other than Alaska Pollock (Theragra chalcogramma)",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 04 99 00 00 00",
+      "Description": "Other",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 06 19 00 00 00",
+      "Description": "Fish fillets, dried, salted or in brine; smoked fish, whether or not cooked before or during the smoking process.",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 05 20 00 00 00",
+      "Description": "Livers and roes, dried, smoked, salted or in brine",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 05 31 00 00 00",
+      "Description": "Tilapias (Oreoichromis spp.) catfish (Pangasius spp., Silurus spp., Ictalurus spp.), carp (Cyprinus carpio, Carassius spp.), other",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 05 32 00 00 00",
+      "Description": "Fish of the families Bregmacerotidae, Euclichthyidae, Gadidae, Macrouridae, Melanonidae, Merlucciidae, Moridae and Muraenolepididae",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 05 39 10 00 00",
+      "Description": "Sharks",
+      "Duty Rate": "5%"
+    },
+    {
+      "H.S. Code": "03 05 39 90 00 00",
+      "Description": "Other",
+      "Duty Rate": "5%"
+    }
+  ],
+  "page_number": 10
+}

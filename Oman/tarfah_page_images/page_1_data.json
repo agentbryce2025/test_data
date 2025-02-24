@@ -1,0 +1,165 @@
+{
+  "entries": [
+    {
+      "H.S. Code": "01 01 21 10 00 91",
+      "Description": "Pure-bred breeding animals: Arab breed",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 21 10 00 92",
+      "Description": "Pure-bred breeding animals: O/A Arab breed males",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 21 10 00 93",
+      "Description": "Pure-bred breeding animals: O/A Arab breed females",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 21 90 00 91",
+      "Description": "Pure-bred breeding animals: Non-Arab breed males",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 21 90 00 92",
+      "Description": "Pure-bred breeding animals: Non-Arab breed females",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 10 00 91",
+      "Description": "Pure-bred breeding animals: Males of Arab breed for sport",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 10 00 92",
+      "Description": "Pure-bred breeding animals: Females of Arab breed for sport",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 10 00 93",
+      "Description": "Pure-bred breeding animals: Males of non-Arab breed for sport",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 10 00 94",
+      "Description": "Pure-bred breeding animals: Females of non-Arab breed for sport",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 10 00 95",
+      "Description": "Pure-bred breeding animals: Ponies (males)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 10 00 96",
+      "Description": "Pure-bred breeding animals: Ponies (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 90 00 01",
+      "Description": "Pure-bred breeding animals: Other Pure-bred Arabian horses for beauty contests",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 29 90 00 02",
+      "Description": "Pure-bred breeding animals: Horses of foreign breeds for beauty contests",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 01 90 00 00 00",
+      "Description": "Asses",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 02 10 00 00 01",
+      "Description": "Live bovine animals: Pure-bred breeding animals: Pure-bred bovine (males)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 02 10 00 00 02",
+      "Description": "Live bovine animals: Pure-bred breeding animals: Pure-bred bovine (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 02 21 00 00 91",
+      "Description": "Live bovine animals: Other: Bovine for slaughter",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 02 29 00 00 91",
+      "Description": "Live bovine animals: Other: Bovine for dairy production",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 02 90 90 00 91",
+      "Description": "Live bovine animals: Other: Offal of cattle",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 03 10 00 00 00",
+      "Description": "Live swine: Pure bred breeding animals",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 03 91 00 00 00",
+      "Description": "Live swine: Other: Weighing less than 50 kg",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 03 92 00 00 00",
+      "Description": "Live swine: Other: Weighing 50 kg or more",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 10 10 00 01",
+      "Description": "Live sheep and goats: Pure-bred breeding: Pure-bred breeding sheep (males)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 10 10 00 02",
+      "Description": "Live sheep and goats: Pure-bred breeding: Pure-bred breeding sheep (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 10 90 00 01",
+      "Description": "Live sheep and goats: Other: Sheep for slaughter (males)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 10 90 00 02",
+      "Description": "Live sheep and goats: Other: Sheep for slaughter (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 10 90 00 03",
+      "Description": "Live sheep and goats: Other: Sheep for dairy production (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 20 10 00 01",
+      "Description": "Live sheep and goats: Pure-bred breeding: Pure-bred breeding goats (males)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 20 10 00 02",
+      "Description": "Live sheep and goats: Pure-bred breeding: Pure-bred breeding goats (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 20 90 00 01",
+      "Description": "Live sheep and goats: Other: Goats for slaughter (males)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 20 90 00 02",
+      "Description": "Live sheep and goats: Other: Goats for slaughter (females)",
+      "Duty Rate": "0%"
+    },
+    {
+      "H.S. Code": "01 04 20 90 00 03",
+      "Description": "Live sheep and goats: Other: Goats for dairy production (females)",
+      "Duty Rate": "0%"
+    }
+  ],
+  "page_number": 1
+}
