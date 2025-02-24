@@ -1,0 +1,423 @@
+[
+  {
+    "entries": [
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "",
+        "H.S. Code": "03 06 12 00 00",
+        "Description in English": "Live lobsters (Homarus spp.)",
+        "Description in Arabic": "كركند الشمال (من جنس الهومار)",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "B",
+        "URA": "",
+        "H.S. Code": "03 06 22 00 00",
+        "Description in English": "Fresh or chilled lobsters (Homarus spp.)",
+        "Description in Arabic": "كركند الشمال طازج أو مبرد",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "",
+        "URA": "",
+        "H.S. Code": "03 06 11 00 00",
+        "Description in English": "Live crabs",
+        "Description in Arabic": "سلطعونات حية",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "",
+        "SG": "",
+        "URA": "B",
+        "H.S. Code": "03 07 11 00 01",
+        "Description in English": "Live oysters",
+        "Description in Arabic": "محار حي",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "B",
+        "H.S. Code": "03 21 10 00 01",
+        "Description in English": "Scallops and other molluscs of the family Pectinidae, Live",
+        "Description in Arabic": "أصداف اسقلوب رخويات حية من فصيلة البطينية",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "",
+        "H.S. Code": "03 71 91 00 01",
+        "Description in English": "Mussels (Mytilus spp.), alive",
+        "Description in Arabic": "بلح البحر (ميوسلبس) طازج",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "",
+        "SG": "",
+        "URA": "B",
+        "H.S. Code": "03 71 10 00 01",
+        "Description in English": "Clams, cockles and ark shells of the Arcidae family, alive",
+        "Description in Arabic": "محار أركيديا حي",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "B",
+        "H.S. Code": "03 87 10 00 01",
+        "Description in English": "Live, fresh or chilled abalone (Haliotis spp.)",
+        "Description in Arabic": "أذن البحر (Haliotis spp.) طازج أو مبرد",
+        "Duty Rate": "5%"
+      }
+    ],
+    "metadata": [
+      "03.07",
+      "03.08"
+    ],
+    "page_number": 12
+  },
+  {
+    "entries": [
+      {
+        "SFTA": "A",
+        "SG": "-",
+        "URA": "0%",
+        "Description in English": "Pure-bred breeding animals: ... Of Arab breeds: -- Of Arab breed males",
+        "Description in Arabic": "مستوردة منها الأنساب:..."
+      },
+      {
+        "SFTA": "A",
+        "SG": "0%",
+        "URA": "-",
+        "Description in English": "Pure-bred breeding animals: - Of Non-Arab breeds",
+        "Description in Arabic": "المستوردة منها الأنساب"
+      },
+      {
+        "SFTA": "B",
+        "SG": "-",
+        "URA": "0%",
+        "Description in English": "Horses for sport : - Males of Arab breed for sport",
+        "Description in Arabic": "ذكر الفرس المستوردة للرياضة: الرشو"
+      },
+      {
+        "SFTA": "A",
+        "SG": "-",
+        "URA": "0%",
+        "Description in English": "Pure-bred breeding animals: -- Other Arab breeds",
+        "Description in Arabic": "غير الأراب"
+      },
+      {
+        "SFTA": "C",
+        "SG": "5%",
+        "URA": "Prohibited",
+        "Description in English": "Pure-bred breeding animals: - Weighing 50 kg or more",
+        "Description in Arabic": "مستوردة منها الأوزان"
+      }
+    ],
+    "metadata": {
+      "section": "Section I: LIVE ANIMALS; ANIMAL PRODUCTS",
+      "chapter": "Chapter 1: Live animals"
+    },
+    "page_number": 1
+  },
+  {
+    "raw_content": "```json\n{\n  \"entries\": [\n    {\n      \"H.S. Code\": \"01 05 11 00 00\",\n      \"Description in English\": \"Fowls of the species Gallus domesticus\",\n      \"Description in Arabic\": \"( من النوع ) ١٠٥١١٠٠٠٠٠ ( الفروج )\",\n      \"Duty Rate\": \"0%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    },\n    {\n      \"H.S. Code\": \"01 05 12 00 00\",\n      \"Description in English\": \"Turkeys\",\n      \"Description in Arabic\": \"( الديوك الرومية )\",\n      \"Duty Rate\": \"0%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    },\n    {\n      \"H.S. Code\": \"01 05 13 00 00\",\n      \"Description in English\": \"Ducks\",\n      \"Description in Arabic\": \"( البط )\",\n      \"Duty Rate\": \"0%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    },\n    {\n      \"H.S. Code\": \"01 05 14 00 00\",\n      \"Description in English\": \"Geese\",\n      \"Description in Arabic\": \"( الوز )\",\n      \"Duty Rate\": \"0%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    },\n    {\n      \"H.S. Code\": \"01 05 15 00 00\",\n      \"Description in English\": \"Guinea fowls\",\n      \"Description in Arabic\": \"( دجاج غينيا )\",\n      \"Duty Rate\": \"0%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    },\n    ...\n    {\n      \"H.S. Code\": \"01 06 20 00 99\",\n      \"Description in English\": \"Other reptiles\",\n      \"Description in Arabic\": \"( زواحف أخرى )\",\n      \"Duty Rate\": \"5%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    },\n    {\n      \"H.S. Code\": \"01 06 20 99 99\",\n      \"Description in English\": \"Birds of prey\",\n      \"Description in Arabic\": \"( طيور جارحة )\",\n      \"Duty Rate\": \"5%\",\n      \"SFTA indicator\": \"A\",\n      \"SG indicator\": \"A\",\n      \"URA indicator\": \"A\"\n    }\n  ],\n  \"metadata\": {\n    \"Section Headers\": [],\n    \"Chapter Headings\": [],\n    \"Notes\": []\n  }\n}\n```\nThis JSON object contains structured data extracted from the Customs Tariff table page with H.S. Codes, descriptions in both English and Arabic, and tariff indicators. Only a partial list of entries is shown to keep it concise.",
+    "parsing_error": "Failed to parse JSON from the response",
+    "page_number": 2
+  },
+  {
+    "entries": [
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Falcon",
+        "Description in Arabic": "الصقر",
+        "H.S. Code": "01 06 31 00 00 1"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Owls",
+        "Description in Arabic": "البوم",
+        "H.S. Code": "01 06 31 00 00 2"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "B",
+        "Duty Rate": "0%",
+        "Description in English": "Other birds of prey",
+        "Description in Arabic": "غيرها من الطيور الجارحة",
+        "H.S. Code": "01 06 31 00 09 9"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Parrots",
+        "Description in Arabic": "الببغاوات",
+        "H.S. Code": "01 06 32 10 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Parakeets",
+        "Description in Arabic": "الدرة",
+        "H.S. Code": "01 06 32 20 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Macaw",
+        "Description in Arabic": "المكاو",
+        "H.S. Code": "01 06 32 30 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Cockatoo",
+        "Description in Arabic": "الكوكاتو",
+        "H.S. Code": "01 06 32 40 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "African parrot",
+        "Description in Arabic": "ببغاء أفريقي",
+        "H.S. Code": "01 06 32 50 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Other parrots",
+        "Description in Arabic": "غيرها من الببغاوات",
+        "H.S. Code": "01 06 32 90 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "D",
+        "Duty Rate": "0%",
+        "Description in English": "(Dromaius novaehollandiae)",
+        "Description in Arabic": "(النعام)",
+        "H.S. Code": "01 06 33 90 00 9"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "D",
+        "Duty Rate": "0%",
+        "Description in English": "Tame and wild pigeons, partridges, pheasants, quails, snipe, sand grouse, wild ducks",
+        "Description in Arabic": "الحمام المستأنس والطيور البرية",
+        "H.S. Code": "01 06 39 90 00 9"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Insects: Bees",
+        "Description in Arabic": "،النحل",
+        "H.S. Code": "01 06 41 00 00 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Other: Locust",
+        "Description in Arabic": "الجراد",
+        "H.S. Code": "01 06 49 00 10 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "A",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Butterflies",
+        "Description in Arabic": "الفراشات",
+        "H.S. Code": "01 06 49 00 21 0"
+      },
+      {
+        "SFTA": "A",
+        "SG": "−",
+        "URA": "A",
+        "Duty Rate": "0%",
+        "Description in English": "Worm",
+        "Description in Arabic": "الدود",
+        "H.S. Code": "01 06 49 00 30 0"
+      }
+    ],
+    "metadata": {
+      "headers": [
+        "Chapter 1 - Live animals",
+        "Chapter 2 - Meat and edible meat offal",
+        "Note"
+      ],
+      "notes": [
+        "This Chapter does not cover:",
+        "(a) Products of the kinds described in headings 02.01 to 02.08 or 02.10, unfit for human consumption",
+        "(b) Edible, non-living insects (heading 04.10)",
+        "(c) Guts, bladders or stomachs of animals (heading 05.04) or animal blood (02.10, 02.10, 02.15, 02.30 and 30.02)",
+        "(d) Animal hair, other than products of heading 02.09 (Chapter 15)"
+      ]
+    },
+    "page_number": 3
+  },
+  {
+    "entries": [
+      {
+        "SFTA": "A",
+        "SG": "0%",
+        "URA": null,
+        "H.S. Code": "02 04 50 11 00",
+        "Description in English": "Fresh carcases of goats",
+        "Description in Arabic": "ذبائح طازجة من الماعز",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "0%",
+        "URA": null,
+        "H.S. Code": "02 04 50 11 01",
+        "Description in English": "Chilled carcases of goats",
+        "Description in Arabic": "ذبائح مبردة من الماعز",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 04 50 12 00",
+        "Description in English": "Frozen carcases of goats",
+        "Description in Arabic": "ذبائح مجمدة من الماعز",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "0%",
+        "URA": null,
+        "H.S. Code": "02 04 50 21 00",
+        "Description in English": "Fresh breasts of goats",
+        "Description in Arabic": "صدور طازجة من الماعز",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "0%",
+        "URA": null,
+        "H.S. Code": "02 04 50 21 01",
+        "Description in English": "Chilled breasts of goats",
+        "Description in Arabic": "صدور مبردة من الماعز",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 04 50 22 00",
+        "Description in English": "Frozen breasts of goats",
+        "Description in Arabic": "صدور مجمدة من الماعز",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 04 50 32 00",
+        "Description in English": "Frozen joints or cuts of goats",
+        "Description in Arabic": "أوصال وزوائد مجمدة من الماعز",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "0%",
+        "URA": null,
+        "H.S. Code": "02 05 09 00 00",
+        "Description in English": "Other meat of horses",
+        "Description in Arabic": "لحوم أخرى من الخيول",
+        "Duty Rate": "0%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 06 90 50 00",
+        "Description in English": "Tongues of swine",
+        "Description in Arabic": "ألسن الخنازير",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "B",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 07 11 00 00",
+        "Description in English": "Meat of fowls, not cut in pieces",
+        "Description in Arabic": "لحوم الدواجن غير مقطعة",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 07 12 00 00",
+        "Description in English": "Frozen cuts of fowls",
+        "Description in Arabic": "قطع دجاج مجمدة",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 07 24 00 00",
+        "Description in English": "Whole headless turkeys (males)",
+        "Description in Arabic": "كامل الديك الرومي بدون رأس (ذكور)",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 07 24 06 00",
+        "Description in English": "Whole boneless turkeys (females)",
+        "Description in Arabic": "كامل الديك الرومي بدون عظام (إناث)",
+        "Duty Rate": "5%"
+      },
+      {
+        "SFTA": "A",
+        "SG": "5%",
+        "URA": null,
+        "H.S. Code": "02 07 47 10 00",
+        "Description in English": "Whole fresh ducks",
+        "Description in Arabic": "البط الكامل الطازج",
+        "Duty Rate": "5%"
+      }
+    ],
+    "metadata": null,
+    "page_number": 4
+  },
+  {
+    "raw_content": "```json\n{\n    \"entries\": [\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Salt (including table salt and denatured salt) and pure sodium chloride, whether or not in aqueous solution or containing added anti-caking or free-flowing agents; sea water.\",\n            \"Description in Arabic\": \"ملح (بما في ذلك ملح الطعام والملح المعالج) وكلوريد الصوديوم النقي، سواء في محلول مائي أو يحتوي على مضافات ضد التكتل أو عوامل منع التصاق؛ مياه البحر.\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25.01\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Pure salt (table salt): - Pure salt not in packings for retail sales\",\n            \"Description in Arabic\": \"ملح نقي (ملح الطعام): - ملح نقي غير معبأ للبيع في التجزئة\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 01\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Pure iodized table salt in packings for retail sales\",\n            \"Description in Arabic\": \"ملح طعام مضاف إليه يود معبأ للبيع في التجزئة\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 02\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Pure coarse table salt in packings for retail sales\",\n            \"Description in Arabic\": \"ملح طعام خشن نقي معبأ للبيع في التجزئة\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 03\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Pure coarse table salt in packings for retail sales\",\n            \"Description in Arabic\": \"ملح طعام خشن نقي معبأ للبيع في التجزئة\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 04\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"coarse artificial Salt for food industries without Iodine\",\n            \"Description in Arabic\": \"ملح صناعي خشن للصناعات الغذائية بدون يود\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 05\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Soft artificial Salt for food industries without Iodine\",\n            \"Description in Arabic\": \"ملح صناعي ناعم للصناعات الغذائية بدون يود\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 06\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Salpetre/ Rock salt\",\n            \"Description in Arabic\": \"سالبتري/ ملح صخري\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 08\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Salt unrefined by solution\",\n            \"Description in Arabic\": \"ملح غير مكرر بالتذويب\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 09\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Solar Salt (Sea salt)\",\n            \"Description in Arabic\": \"ملح شمسي (ملح البحر)\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 10\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Purified salt\",\n            \"Description in Arabic\": \"ملح منقى\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 11\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Salt containing added anti-caking or free-flowing agents\",\n            \"Description in Arabic\": \"ملح يحتوي على مضافات مانعة للتكتل أو عوامل منع الالتصاق\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 12\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Salt of the Red Sea\",\n            \"Description in Arabic\": \"ملح البحر الأحمر\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 13\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Low sodium salt\",\n            \"Description in Arabic\": \"ملح منخفض الصوديوم\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 15\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Other\",\n            \"Description in Arabic\": \"أخرى\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 90\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Denatured salt unfit for human consumption:\",\n            \"Description in Arabic\": \"ملح منكه غير صالح للاستهلاك البشري:\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 95\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Denatured salt for drilling of wells\",\n            \"Description in Arabic\": \"- - - ملح معالج للحفر\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 96\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Denatured salt for treating water\",\n            \"Description in Arabic\": \"- - - ملح معالج لمعالجة المياه\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 97\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Other\",\n            \"Description in Arabic\": \"- - - أخرى\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 10 99\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Pure sodium chloride:\",\n            \"Description in Arabic\": \"- - - كلوريد الصوديوم النقي:\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 20 00\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Pure sodium chloride for industrial use\",\n            \"Description in Arabic\": \"- - - كلوريد الصوديوم النقي للاستخدام الصناعي\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 30 00\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Pure sodium chloride for medical industries\",\n            \"Description in Arabic\": \"- - - كلوريد الصوديوم النقي للصناعات الطبية\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 39 00\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- - - Other:\",\n            \"Description in Arabic\": \"- - - أخرى:\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 49 00\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Unpurified sodium chloride medically prepared in aqueous solution\",\n            \"Description in Arabic\": \"كلوريد الصوديوم غير المنقى المحضر طبيا في محلول مائي\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 90 01\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Unpurified sodium chloride for industrial purposes\",\n            \"Description in Arabic\": \"كلوريد الصوديوم غير المنقى للأغراض الصناعية\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 90 02\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sodium chloride, residual after chemical treatment\",\n            \"Description in Arabic\": \"كلوريد الصوديوم المتبقي بعد المعالجة الكيميائية\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 90 03\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Alcoloid Salt\",\n            \"Description in Arabic\": \"ملح الكلويد\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 99 00\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- Salt baths\",\n            \"Description in Arabic\": \"- حمامات ملحية\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 99 10\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- Other baths\",\n            \"Description in Arabic\": \"- حمامات أخرى\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 01 00 99 90\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Unroasted iron pyrites,\",\n            \"Description in Arabic\": \"البايريتات الحديدية غير المكلسة،\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 02 00 00 00\"\n        },\n        {\n            \"SFTA\": \"-\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Unroasted Copper Iron Pyrites\",\n            \"Description in Arabic\": \"بيريتات الحديد غير المكوي من النحاس\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 02 00 00 09\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur of all kinds, other than sublimed sulphur,precipitated sulphur and colloidal sulphur.\",\n            \"Description in Arabic\": \"الكبريت بأنواعه فيما عدا الكبريت المسامي أو الكولائيدى\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25.03\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Native Crude mineral Sulphur\",\n            \"Description in Arabic\": \"الكبريت الطبيعي الخام\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 02\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Concentrated Crude mineral Sulphur\",\n            \"Description in Arabic\": \"الكبريت الخام المكثف\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 03\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Unrefined Sulphur extracted by smelting\",\n            \"Description in Arabic\": \"الكبريت غير المكرر المستخرج بواسطة الصهر\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 04\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Unrefined Sulphur as a by product of coal gas purification\",\n            \"Description in Arabic\": \"الكبريت غير المكرر كمنتج فرعي لتنقية الغاز الفحمى\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 05\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur refined, distilled, moulded pieces in forms of bars\",\n            \"Description in Arabic\": \"الكبريت المكرر، والمقطر المصبوب على شكل قضبان\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 06\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur refined, distilled, moulded pieces in forms of chips\",\n            \"Description in Arabic\": \"الكبريت المكرر، المقصف المنقوش في هيئة رقائق\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 07\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur refined, distilled,granulated\",\n            \"Description in Arabic\": \"الكبريت المكرر والمقطر والحبيبي\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 08\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur, refined and ground\",\n            \"Description in Arabic\": \"الكبريت المكرر والمطحون\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 09\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur, unrefined and ground\",\n            \"Description in Arabic\": \"الكبريت غير المكرر والمطحون\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 09\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Sulphur resulted from oiling of sulphur vapors\",\n            \"Description in Arabic\": \"الكبريت الناتج عن تزييت بخار الكبريت\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 03 00 00 09\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- Natural graphite; - in powder or in flakes:\",\n            \"Description in Arabic\": \"- الجرافيت الطبيعي؛ - مسحوق أو بفلكات:\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 04 10 00 01\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- Natural graphite, in powder\",\n            \"Description in Arabic\": \"- الجرافيت الطبيعي، مسحوق\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 04 10 00 02\"\n        },\n        {\n            \"SFTA\": \"A\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- Natural graphite, in flakes\",\n            \"Description in Arabic\": \"- الجرافيت الطبيعي، بفلكات\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 04 10 00 03\"\n        },\n        {\n            \"SFTA\": \"-\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"- Other :\",\n            \"Description in Arabic\": \"- أخرى:\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 04 90 00 00\"\n        },\n        {\n            \"SFTA\": \"-\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Natural Graphite (black lead) with the carbon percentage ranges from 30% to 85%.\",\n            \"Description in Arabic\": \"الجرافيت الطبيعي (رصاص أسود) بنسب كربون تتراوح من 30٪ إلى 85٪.\",\n            \"Duty Rate\": \"5%\",\n            \"H.S. Code\": \"25 04 90 00 01\"\n        },\n        {\n            \"SFTA\": \"-\",\n            \"SG\": \"+\",\n            \"URA\": \"-\",\n            \"Description in English\": \"Natural Graphite (black lead) with the carbon percentage ranges from 85% to ",
+    "parsing_error": "Failed to parse JSON from the response",
+    "page_number": 50
+  }
+]
