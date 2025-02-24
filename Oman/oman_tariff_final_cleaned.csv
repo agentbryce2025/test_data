@@ -7,37 +7,37 @@ A,A,B,0321100001,"Scallops and other molluscs of the family Pectinidae, Live",أ
 A,A,,0371910001,"Mussels (Mytilus spp.), alive",بلح البحر (ميوسلبس) طازج,5.0,12
 ,,B,0371100001,"Clams, cockles and ark shells of the Arcidae family, alive",محار أركيديا حي,5.0,12
 A,A,B,0387100001,"Live, fresh or chilled abalone (Haliotis spp.)",أذن البحر (Haliotis spp.) طازج أو مبرد,5.0,12
-A,-,0%,,Pure-bred breeding animals: ... Of Arab breeds: -- Of Arab breed males,مستوردة منها الأنساب:...,,1
-A,0%,-,,Pure-bred breeding animals: - Of Non-Arab breeds,المستوردة منها الأنساب,,1
-B,-,0%,,Horses for sport : - Males of Arab breed for sport,ذكر الفرس المستوردة للرياضة: الرشو,,1
-A,-,0%,,Pure-bred breeding animals: -- Other Arab breeds,غير الأراب,,1
-C,5%,Prohibited,,Pure-bred breeding animals: - Weighing 50 kg or more,مستوردة منها الأوزان,,1
-A,−,A,01063100001,Falcon,الصقر,0.0,3
-A,−,A,01063100002,Owls,البوم,0.0,3
-A,−,B,01063100099,Other birds of prey,غيرها من الطيور الجارحة,0.0,3
-A,A,A,01063210000,Parrots,الببغاوات,0.0,3
-A,A,A,01063220000,Parakeets,الدرة,0.0,3
-A,A,A,01063230000,Macaw,المكاو,0.0,3
-A,A,A,01063240000,Cockatoo,الكوكاتو,0.0,3
-A,−,A,01063250000,African parrot,ببغاء أفريقي,0.0,3
-A,−,A,01063290000,Other parrots,غيرها من الببغاوات,0.0,3
-A,−,D,01063390009,(Dromaius novaehollandiae),(النعام),0.0,3
-A,−,D,01063990009,"Tame and wild pigeons, partridges, pheasants, quails, snipe, sand grouse, wild ducks",الحمام المستأنس والطيور البرية,0.0,3
-A,−,A,01064100000,Insects: Bees,،النحل,0.0,3
-A,−,A,01064900100,Other: Locust,الجراد,0.0,3
-A,A,A,01064900210,Butterflies,الفراشات,0.0,3
-A,−,A,01064900300,Worm,الدود,0.0,3
-A,0%,,0204501100,Fresh carcases of goats,ذبائح طازجة من الماعز,0.0,4
-A,0%,,0204501101,Chilled carcases of goats,ذبائح مبردة من الماعز,0.0,4
-A,5%,,0204501200,Frozen carcases of goats,ذبائح مجمدة من الماعز,5.0,4
-A,0%,,0204502100,Fresh breasts of goats,صدور طازجة من الماعز,0.0,4
-A,0%,,0204502101,Chilled breasts of goats,صدور مبردة من الماعز,0.0,4
-A,5%,,0204502200,Frozen breasts of goats,صدور مجمدة من الماعز,5.0,4
-A,5%,,0204503200,Frozen joints or cuts of goats,أوصال وزوائد مجمدة من الماعز,5.0,4
-A,0%,,0205090000,Other meat of horses,لحوم أخرى من الخيول,0.0,4
-A,5%,,0206905000,Tongues of swine,ألسن الخنازير,5.0,4
-B,5%,,0207110000,"Meat of fowls, not cut in pieces",لحوم الدواجن غير مقطعة,5.0,4
-A,5%,,0207120000,Frozen cuts of fowls,قطع دجاج مجمدة,5.0,4
-A,5%,,0207240000,Whole headless turkeys (males),كامل الديك الرومي بدون رأس (ذكور),5.0,4
-A,5%,,0207240600,Whole boneless turkeys (females),كامل الديك الرومي بدون عظام (إناث),5.0,4
-A,5%,,0207471000,Whole fresh ducks,البط الكامل الطازج,5.0,4
+A,-,,,Pure-bred breeding animals: ... Of Arab breeds: -- Of Arab breed males,مستوردة منها الأنساب:...,0.0,1
+A,,-,,Pure-bred breeding animals: - Of Non-Arab breeds,المستوردة منها الأنساب,0.0,1
+B,-,,,Horses for sport : - Males of Arab breed for sport,ذكر الفرس المستوردة للرياضة: الرشو,0.0,1
+A,-,,,Pure-bred breeding animals: -- Other Arab breeds,غير الأراب,0.0,1
+C,,,,Pure-bred breeding animals: - Weighing 50 kg or more,مستوردة منها الأوزان,PROHIBITED,1
+A,−,A,,Falcon,الصقر,0.0,3
+A,−,A,,Owls,البوم,0.0,3
+A,−,B,,Other birds of prey,غيرها من الطيور الجارحة,0.0,3
+A,A,A,,Parrots,الببغاوات,0.0,3
+A,A,A,,Parakeets,الدرة,0.0,3
+A,A,A,,Macaw,المكاو,0.0,3
+A,A,A,,Cockatoo,الكوكاتو,0.0,3
+A,−,A,,African parrot,ببغاء أفريقي,0.0,3
+A,−,A,,Other parrots,غيرها من الببغاوات,0.0,3
+A,−,D,,(Dromaius novaehollandiae),(النعام),0.0,3
+A,−,D,,"Tame and wild pigeons, partridges, pheasants, quails, snipe, sand grouse, wild ducks",الحمام المستأنس والطيور البرية,0.0,3
+A,−,A,,Insects: Bees,،النحل,0.0,3
+A,−,A,,Other: Locust,الجراد,0.0,3
+A,A,A,,Butterflies,الفراشات,0.0,3
+A,−,A,,Worm,الدود,0.0,3
+A,,,0204501100,Fresh carcases of goats,ذبائح طازجة من الماعز,0.0,4
+A,,,0204501101,Chilled carcases of goats,ذبائح مبردة من الماعز,0.0,4
+A,,,0204501200,Frozen carcases of goats,ذبائح مجمدة من الماعز,5.0,4
+A,,,0204502100,Fresh breasts of goats,صدور طازجة من الماعز,0.0,4
+A,,,0204502101,Chilled breasts of goats,صدور مبردة من الماعز,0.0,4
+A,,,0204502200,Frozen breasts of goats,صدور مجمدة من الماعز,5.0,4
+A,,,0204503200,Frozen joints or cuts of goats,أوصال وزوائد مجمدة من الماعز,5.0,4
+A,,,0205090000,Other meat of horses,لحوم أخرى من الخيول,0.0,4
+A,,,0206905000,Tongues of swine,ألسن الخنازير,5.0,4
+B,,,0207110000,"Meat of fowls, not cut in pieces",لحوم الدواجن غير مقطعة,5.0,4
+A,,,0207120000,Frozen cuts of fowls,قطع دجاج مجمدة,5.0,4
+A,,,0207240000,Whole headless turkeys (males),كامل الديك الرومي بدون رأس (ذكور),5.0,4
+A,,,0207240600,Whole boneless turkeys (females),كامل الديك الرومي بدون عظام (إناث),5.0,4
+A,,,0207471000,Whole fresh ducks,البط الكامل الطازج,5.0,4

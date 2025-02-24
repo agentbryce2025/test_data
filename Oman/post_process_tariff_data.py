@@ -24,6 +24,10 @@ def clean_duty_rate(rate_str: Optional[str]) -> Optional[float]:
     if not rate_str or rate_str == "null" or rate_str == "None":
         return None
     
+    # Check for special rate values
+    if isinstance(rate_str, str) and "prohibit" in rate_str.lower():
+        return "PROHIBITED"
+    
     # Extract percentage value
     match = re.search(r'(\d+(?:\.\d+)?)%?', str(rate_str))
     if match:
@@ -35,11 +39,50 @@ def clean_hs_code(hs_code: Optional[str]) -> Optional[str]:
     if not hs_code or hs_code == "null" or hs_code == "None":
         return None
     
-    # Remove any non-digit or non-dot characters
-    cleaned = re.sub(r'[^\d.]', '', str(hs_code))
-    if not cleaned:
-        return None
-    return cleaned
+    # Remove spaces and other non-essential characters
+    cleaned = re.sub(r'\s+', '', str(hs_code))
+    
+    # Check if it's a valid HS code pattern
+    if re.match(r'^(\d{2,4}\.?\d*|(\d{2}\s?){1,5})$', str(hs_code)):
+        # Remove any non-digit or non-dot characters for final format
+        cleaned = re.sub(r'[^\d.]', '', str(hs_code))
+        if not cleaned:
+            return None
+        return cleaned
+    
+    return None
+
+def fix_field_misassignments(entry: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Fix common field misassignment issues, like duty rates appearing in indicator fields.
+    """
+    # List of fields that might contain duty rates
+    possible_rate_fields = ['sg', 'ura', 'sfta']
+    
+    # Check for duty rate patterns in other fields
+    if entry.get('duty_rate') is None:
+        for field in possible_rate_fields:
+            value = entry.get(field)
+            if value and isinstance(value, str) and '%' in value:
+                # This looks like a duty rate
+                entry['duty_rate'] = value
+                entry[field] = None
+                break
+    
+    # Clean up indicator fields - these should be single letters or symbols, not percentages
+    for field in possible_rate_fields:
+        value = entry.get(field)
+        if value and isinstance(value, str):
+            # If it's clearly a percentage, it's not an indicator
+            if '%' in value or re.match(r'\d+(\.\d+)?%?', value):
+                entry[field] = None
+                
+            # If it contains "prohibit", move to duty_rate
+            elif "prohibit" in value.lower():
+                entry['duty_rate'] = "PROHIBITED"
+                entry[field] = None
+    
+    return entry
 
 def standardize_field_names(entry: Dict[str, Any]) -> Dict[str, Any]:
     """Standardize field names in entries."""
@@ -99,9 +142,18 @@ def clean_entries(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         # Standardize field names
         standardized = standardize_field_names(entry)
         
+        # Fix common field misassignments
+        standardized = fix_field_misassignments(standardized)
+        
         # Clean specific fields
         standardized['duty_rate'] = clean_duty_rate(standardized.get('duty_rate'))
         standardized['hs_code'] = clean_hs_code(standardized.get('hs_code'))
+        
+        # Skip entries that have no HS code AND no duty rate, as they're likely headers or incomplete data
+        if standardized.get('hs_code') is None and standardized.get('duty_rate') is None:
+            # But keep them if they have meaningful descriptions
+            if not standardized.get('description_en') or len(standardized.get('description_en', '')) < 5:
+                continue
         
         cleaned_entries.append(standardized)
     

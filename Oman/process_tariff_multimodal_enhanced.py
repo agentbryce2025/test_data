@@ -43,7 +43,7 @@ openai.api_key = OPENAI_API_KEY
 PDF_PATH = "tarfah.pdf"
 OUTPUT_DIR = "tarfah_page_images"
 OUTPUT_JSON = "oman_tariff_data_multimodal_enhanced.json"
-PAGES_TO_PROCESS = None  # Set to None to process all pages, or specify a range like (1, 5)
+PAGES_TO_PROCESS = (1, 10)  # Set to None to process all pages, or specify a range like (1, 5)
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # seconds
 
@@ -79,22 +79,28 @@ def extract_table_data_from_image(image_base64: str) -> Dict[str, Any]:
                     {
                         "role": "system",
                         "content": """
-                        You are a data extraction specialist. Your task is to extract structured data from 
-                        Oman's Customs Tariff tables. Extract ALL columns from the table.
+                        You are a data extraction specialist focusing on Oman's Customs Tariff tables. Your task is to extract ALL columns from the tables with high precision.
 
-                        For each entry in the table, extract:
-                        - H.S. Code (the tariff code, usually on the rightmost column)
-                        - Description in English (the column with English text)
-                        - Description in Arabic (the column with Arabic text)
-                        - Duty Rate (percentage value, usually 0%, 5% etc.)
-                        - SFTA indicator (marked as A, B, D, etc. - leftmost column)
-                        - SG indicator (second column from left)
-                        - URA indicator (third column from left)
+                        For each entry in the table, extract these exact fields:
+                        - H.S. Code: The tariff code in the rightmost column (e.g., "01.01", "01 01 21 00 10", "25.03")
+                        - Description in English: The column with English product descriptions
+                        - Description in Arabic: The column with Arabic product descriptions
+                        - Duty Rate: The percentage value (e.g., "0%", "5%", "PROHIBITED") - this should ALWAYS go in the Duty Rate field
+                        - SFTA: The leftmost indicator column, usually contains A, B, C, etc.
+                        - SG: The second indicator column from left
+                        - URA: The third indicator column from left (before the duty rate)
                         
-                        If a page has section headers, chapter headings, or notes, include those as well in a separate "metadata" section.
-                        If a value is not present for a field, use null.
+                        IMPORTANT RULES:
+                        1. Duty Rate should NEVER be placed in the SFTA, SG or URA fields
+                        2. The indicator columns (SFTA, SG, URA) should contain only single character values like "A", "B", "+", "-" etc.
+                        3. Don't mix up numerical percentages (0%, 5%) with letter indicators (A, B, C)
+                        4. Be careful about right-to-left text in the Arabic column
+                        5. If a field is empty, use null, not an empty string
+                        6. Include ALL lines from the table, including headings and subheadings
                         
-                        Return the data in a structured JSON format with all the fields. Do not include explanatory text, only the JSON.
+                        If a page has section headers, chapter headings, or notes, include those in a separate "metadata" section.
+                        
+                        Return the data in a structured JSON format with all the fields. Do not include any explanatory text, only the JSON.
                         If a page doesn't contain tariff table data, return an empty entries array with a message.
                         """
                     },
@@ -122,6 +128,17 @@ def extract_table_data_from_image(image_base64: str) -> Dict[str, Any]:
             
             # Find JSON data in the response
             try:
+                # First, try to extract JSON from code blocks
+                code_block_pattern = r"```(?:json)?\s*([\s\S]*?)\s*```"
+                code_blocks = re.findall(code_block_pattern, content)
+                
+                if code_blocks:
+                    for block in code_blocks:
+                        try:
+                            return json.loads(block.strip())
+                        except json.JSONDecodeError:
+                            continue
+                
                 # Try to find and parse JSON directly
                 json_start = content.find('{')
                 json_end = content.rfind('}')
@@ -147,17 +164,9 @@ def extract_table_data_from_image(image_base64: str) -> Dict[str, Any]:
                         return {"entries": json.loads(json_str)}
                     except json.JSONDecodeError:
                         pass
-                        
-                # Try looking for markdown JSON code blocks
-                json_matches = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', content)
-                if json_matches:
-                    json_str = json_matches.group(1).strip()
-                    try:
-                        return json.loads(json_str)
-                    except json.JSONDecodeError:
-                        pass
                 
                 # Return raw content if all parsing attempts fail
+                print(f"Failed to parse JSON. Content snippet: {content[:200]}...")
                 return {"raw_content": content, "parsing_error": "Failed to parse JSON from the response"}
             
             except Exception as e:

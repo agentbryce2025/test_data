@@ -82,51 +82,51 @@
   {
     "sfta": "A",
     "sg": "-",
-    "ura": "0%",
+    "ura": null,
     "description_en": "Pure-bred breeding animals: ... Of Arab breeds: -- Of Arab breed males",
     "description_ar": "مستوردة منها الأنساب:...",
     "hs_code": null,
-    "duty_rate": null,
+    "duty_rate": 0.0,
     "page_number": 1
   },
   {
     "sfta": "A",
-    "sg": "0%",
+    "sg": null,
     "ura": "-",
     "description_en": "Pure-bred breeding animals: - Of Non-Arab breeds",
     "description_ar": "المستوردة منها الأنساب",
     "hs_code": null,
-    "duty_rate": null,
+    "duty_rate": 0.0,
     "page_number": 1
   },
   {
     "sfta": "B",
     "sg": "-",
-    "ura": "0%",
+    "ura": null,
     "description_en": "Horses for sport : - Males of Arab breed for sport",
     "description_ar": "ذكر الفرس المستوردة للرياضة: الرشو",
     "hs_code": null,
-    "duty_rate": null,
+    "duty_rate": 0.0,
     "page_number": 1
   },
   {
     "sfta": "A",
     "sg": "-",
-    "ura": "0%",
+    "ura": null,
     "description_en": "Pure-bred breeding animals: -- Other Arab breeds",
     "description_ar": "غير الأراب",
     "hs_code": null,
-    "duty_rate": null,
+    "duty_rate": 0.0,
     "page_number": 1
   },
   {
     "sfta": "C",
-    "sg": "5%",
-    "ura": "Prohibited",
+    "sg": null,
+    "ura": null,
     "description_en": "Pure-bred breeding animals: - Weighing 50 kg or more",
     "description_ar": "مستوردة منها الأوزان",
     "hs_code": null,
-    "duty_rate": null,
+    "duty_rate": "PROHIBITED",
     "page_number": 1
   },
   {
@@ -136,7 +136,7 @@
     "duty_rate": 0.0,
     "description_en": "Falcon",
     "description_ar": "الصقر",
-    "hs_code": "01063100001",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -146,7 +146,7 @@
     "duty_rate": 0.0,
     "description_en": "Owls",
     "description_ar": "البوم",
-    "hs_code": "01063100002",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -156,7 +156,7 @@
     "duty_rate": 0.0,
     "description_en": "Other birds of prey",
     "description_ar": "غيرها من الطيور الجارحة",
-    "hs_code": "01063100099",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -166,7 +166,7 @@
     "duty_rate": 0.0,
     "description_en": "Parrots",
     "description_ar": "الببغاوات",
-    "hs_code": "01063210000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -176,7 +176,7 @@
     "duty_rate": 0.0,
     "description_en": "Parakeets",
     "description_ar": "الدرة",
-    "hs_code": "01063220000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -186,7 +186,7 @@
     "duty_rate": 0.0,
     "description_en": "Macaw",
     "description_ar": "المكاو",
-    "hs_code": "01063230000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -196,7 +196,7 @@
     "duty_rate": 0.0,
     "description_en": "Cockatoo",
     "description_ar": "الكوكاتو",
-    "hs_code": "01063240000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -206,7 +206,7 @@
     "duty_rate": 0.0,
     "description_en": "African parrot",
     "description_ar": "ببغاء أفريقي",
-    "hs_code": "01063250000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -216,7 +216,7 @@
     "duty_rate": 0.0,
     "description_en": "Other parrots",
     "description_ar": "غيرها من الببغاوات",
-    "hs_code": "01063290000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -226,7 +226,7 @@
     "duty_rate": 0.0,
     "description_en": "(Dromaius novaehollandiae)",
     "description_ar": "(النعام)",
-    "hs_code": "01063390009",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -236,7 +236,7 @@
     "duty_rate": 0.0,
     "description_en": "Tame and wild pigeons, partridges, pheasants, quails, snipe, sand grouse, wild ducks",
     "description_ar": "الحمام المستأنس والطيور البرية",
-    "hs_code": "01063990009",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -246,7 +246,7 @@
     "duty_rate": 0.0,
     "description_en": "Insects: Bees",
     "description_ar": "،النحل",
-    "hs_code": "01064100000",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -256,7 +256,7 @@
     "duty_rate": 0.0,
     "description_en": "Other: Locust",
     "description_ar": "الجراد",
-    "hs_code": "01064900100",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -266,7 +266,7 @@
     "duty_rate": 0.0,
     "description_en": "Butterflies",
     "description_ar": "الفراشات",
-    "hs_code": "01064900210",
+    "hs_code": null,
     "page_number": 3
   },
   {
@@ -276,12 +276,12 @@
     "duty_rate": 0.0,
     "description_en": "Worm",
     "description_ar": "الدود",
-    "hs_code": "01064900300",
+    "hs_code": null,
     "page_number": 3
   },
   {
     "sfta": "A",
-    "sg": "0%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204501100",
     "description_en": "Fresh carcases of goats",
@@ -291,7 +291,7 @@
   },
   {
     "sfta": "A",
-    "sg": "0%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204501101",
     "description_en": "Chilled carcases of goats",
@@ -301,7 +301,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204501200",
     "description_en": "Frozen carcases of goats",
@@ -311,7 +311,7 @@
   },
   {
     "sfta": "A",
-    "sg": "0%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204502100",
     "description_en": "Fresh breasts of goats",
@@ -321,7 +321,7 @@
   },
   {
     "sfta": "A",
-    "sg": "0%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204502101",
     "description_en": "Chilled breasts of goats",
@@ -331,7 +331,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204502200",
     "description_en": "Frozen breasts of goats",
@@ -341,7 +341,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0204503200",
     "description_en": "Frozen joints or cuts of goats",
@@ -351,7 +351,7 @@
   },
   {
     "sfta": "A",
-    "sg": "0%",
+    "sg": null,
     "ura": null,
     "hs_code": "0205090000",
     "description_en": "Other meat of horses",
@@ -361,7 +361,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0206905000",
     "description_en": "Tongues of swine",
@@ -371,7 +371,7 @@
   },
   {
     "sfta": "B",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0207110000",
     "description_en": "Meat of fowls, not cut in pieces",
@@ -381,7 +381,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0207120000",
     "description_en": "Frozen cuts of fowls",
@@ -391,7 +391,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0207240000",
     "description_en": "Whole headless turkeys (males)",
@@ -401,7 +401,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0207240600",
     "description_en": "Whole boneless turkeys (females)",
@@ -411,7 +411,7 @@
   },
   {
     "sfta": "A",
-    "sg": "5%",
+    "sg": null,
     "ura": null,
     "hs_code": "0207471000",
     "description_en": "Whole fresh ducks",
