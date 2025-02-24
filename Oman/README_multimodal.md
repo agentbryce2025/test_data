@@ -1,6 +1,6 @@
 # Oman Tariff Data Multimodal Processing
 
-This project processes the Oman Customs Tariff PDF (tarfah.pdf) using OpenAI's multimodal vision model to extract structured table data and convert it to JSON format.
+This project processes the Oman Customs Tariff PDF (tarfah.pdf) using OpenAI's GPT-4o model with multimodal capabilities to extract structured table data and convert it to JSON format.
 
 ## Overview
 
