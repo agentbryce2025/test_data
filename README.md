@@ -1,20 +1,20 @@
-# Trade News API Scraper
+# Trade News RSS Scraper
 
-A Python scraper that collects trade-related news from Reuters and Global Trade Alert using their API endpoints.
+A Python scraper that collects trade-related news from Reuters RSS feeds and Global Trade Alert search results.
 
 ## Features
 
-- Uses official APIs where available
-- Multiple fallback methods
+- Uses Reuters RSS feeds for reliable article access
+- Searches GTA website for recent announcements
 - Automatic filtering for trade-related content
 - Date-based filtering for last week's content
+- HTML cleaning and text normalization
 - Comprehensive error handling and logging
-- Debug output for troubleshooting
 
 ## Requirements
 
 - Python 3.7+
-- Required packages: requests, python-dateutil
+- Required packages: feedparser, requests, beautifulsoup4, python-dateutil
 
 ## Installation
 
@@ -25,14 +25,28 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python api_scraper.py
+python rss_scraper.py
 ```
 
 This will:
-1. Fetch recent articles from Reuters API
-2. Fetch announcements from GTA API
+1. Fetch articles from Reuters RSS feeds
+2. Search GTA website for recent announcements
 3. Filter for trade-related content
 4. Save results to `trade_news.json`
+
+## Trade-Related Keywords
+
+The scraper looks for content containing:
+- trade
+- tariff
+- import
+- export
+- customs
+- duty
+- wto
+- trade war
+- trade dispute
+- trade agreement
 
 ## Output Format
 
@@ -53,7 +67,6 @@ This will:
             "title": "Announcement Title",
             "date": "2025-02-24",
             "description": "Announcement description",
-            "implementing_country": "Country Name",
             "source": "Global Trade Alert"
         }
     ]
@@ -62,21 +75,21 @@ This will:
 
 ## Debugging
 
-The scraper saves API responses for debugging:
-- `reuters_api_*.json`: Reuters API responses
-- `gta_api_*.json`: GTA API responses
+The scraper saves:
+- GTA search results in `gta_search.html`
+- Detailed log output
 
 ## Error Handling
 
 The scraper includes:
-- Multiple API endpoint attempts
+- Multiple RSS feed attempts
+- HTML cleaning and normalization
 - Comprehensive error logging
-- Graceful degradation if endpoints fail
 - Data validation and filtering
 
 ## Notes
 
-- Uses official APIs where available
-- Implements multiple fallback methods
+- Uses RSS feeds for more reliable access
+- Implements text cleaning and normalization
 - Filters content based on trade-related keywords
 - Ensures content is from the last 7 days
