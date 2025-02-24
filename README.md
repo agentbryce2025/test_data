@@ -1,15 +1,16 @@
-# Modern Trade News Scraper
+# Advanced Trade News Scraper
 
-A Python scraper that collects trade-related news from Reuters and Global Trade Alert using Playwright for robust web scraping.
+A sophisticated Python scraper that collects trade-related news from Reuters and Global Trade Alert using modern web automation techniques.
 
 ## Features
 
-- Uses Playwright for reliable web automation
-- Works on any system architecture (Windows, macOS, Linux)
+- Advanced web automation using Playwright
 - Multiple fallback methods for finding content
-- Automatic scrolling to load more content
+- Intelligent date extraction from various formats
+- Keyword-based filtering for trade-related content
 - Comprehensive error handling and logging
-- Deduplication of articles
+- Screenshot capture for debugging
+- Deduplication of content
 
 ## Requirements
 
@@ -18,6 +19,13 @@ A Python scraper that collects trade-related news from Reuters and Global Trade 
 
 ## Installation
 
+1. Run the setup script:
+```bash
+./setup.sh
+```
+
+Or manually:
+
 1. Install Python requirements:
 ```bash
 pip install -r requirements.txt
@@ -25,18 +33,20 @@ pip install -r requirements.txt
 
 2. Install Playwright browsers:
 ```bash
-playwright install
+playwright install chromium
 ```
 
 ## Usage
 
 ```bash
-python modern_scraper.py
+python advanced_scraper.py
 ```
 
-This will create a `trade_news.json` file containing:
-- Recent Reuters articles about tariffs and trade
-- Recent Global Trade Alert announcements
+This will:
+1. Scrape Reuters for trade-related articles
+2. Scrape Global Trade Alert for announcements
+3. Save results to `trade_news.json`
+4. Save debug screenshots for troubleshooting
 
 ## Output Format
 
@@ -49,8 +59,7 @@ This will create a `trade_news.json` file containing:
             "url": "Article URL",
             "date": "2025-02-24T10:00:00Z",
             "description": "Article description",
-            "source": "Reuters",
-            "category": "tariffs"
+            "source": "Reuters"
         }
     ],
     "gta_announcements": [
@@ -58,28 +67,31 @@ This will create a `trade_news.json` file containing:
             "title": "Announcement Title",
             "date": "2025-02-24",
             "description": "Announcement description",
-            "source": "Global Trade Alert",
-            "url": "https://www.globaltradealert.org/latest"
+            "source": "Global Trade Alert"
         }
     ]
 }
 ```
 
+## Debugging
+
+The scraper saves several debug files:
+- `reuters_*.png`: Screenshots of Reuters pages
+- `gta_main.png`: Screenshot of GTA homepage
+- Log output with detailed information
+
 ## Troubleshooting
 
 If the scraper fails:
-1. Check your internet connection
-2. Make sure Playwright is installed correctly:
-   ```bash
-   playwright install
-   ```
-3. Check the logs for detailed error messages
-4. Try running without headless mode by changing `headless=True` to `headless=False`
-5. Increase wait times if content isn't loading fast enough
+1. Check the debug screenshots
+2. Look for error messages in the log output
+3. Try running without headless mode by changing `headless=True` to `headless=False`
+4. Increase wait times if content isn't loading
+5. Check if the website structure has changed
 
 ## Notes
 
-- The scraper uses Playwright to handle modern web pages
-- Implements automatic scrolling to load more content
-- Includes comprehensive error handling and logging
-- Works across all major operating systems and architectures
+- The scraper uses advanced selectors to find content
+- Implements intelligent date parsing
+- Filters content based on trade-related keywords
+- Handles dynamic web pages with proper waiting
