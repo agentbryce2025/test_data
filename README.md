@@ -1,46 +1,27 @@
-# Trade News Scrapers
+# Trade News Scraper
 
-This repository contains scripts to collect trade-related news and announcements from:
-- Reuters Business News (via RSS feed)
-- Global Trade Alert (via API)
-
-## Features
-
-- Collects news articles and announcements from the last 7 days
-- Filters Reuters articles for trade-related content
-- Outputs data in JSON format
-- Combined scraper that aggregates data from both sources
+A Python scraper that collects trade-related news from Reuters and Global Trade Alert.
 
 ## Requirements
 
-Install the required packages:
+1. Python 3.7+
+2. Firefox browser
+3. Required Python packages:
 ```bash
-pip install feedparser requests
+pip install -r requirements.txt
 ```
 
 ## Usage
-
-### Run individual scrapers:
-
-```bash
-# For Reuters articles
-python reuters_scraper.py
-
-# For Global Trade Alert announcements
-python gta_scraper.py
-```
-
-### Run combined scraper:
 
 ```bash
 python run_scrapers.py
 ```
 
-This will create a `trade_news.json` file containing data from both sources.
+This will create a `trade_news.json` file containing:
+- Recent Reuters articles about tariffs and trade
+- Recent Global Trade Alert announcements
 
 ## Output Format
-
-The combined output JSON has the following structure:
 
 ```json
 {
@@ -56,13 +37,20 @@ The combined output JSON has the following structure:
     ],
     "gta_announcements": [
         {
-            "title": "Intervention Title",
+            "title": "Announcement Title",
             "implementing_country": "Country Name",
-            "announcement_date": "2025-02-24",
-            "implementation_date": "2025-02-24",
-            "description": "Intervention description",
+            "date": "2025-02-24",
+            "description": "Announcement description",
             "source": "Global Trade Alert"
         }
     ]
 }
 ```
+
+## Troubleshooting
+
+If the scraper fails:
+1. Check your internet connection
+2. Verify Firefox is installed
+3. Check if the websites are accessible in your browser
+4. Try running without headless mode for debugging
