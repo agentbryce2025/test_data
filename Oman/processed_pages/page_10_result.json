@@ -1,0 +1,59 @@
+{
+  "entries": [
+    {
+      "SFTA": "A",
+      "SG": "C",
+      "URA": "A",
+      "Duty Rate": "5%",
+      "Description in English": "Spotted Groupers",
+      "Description in Arabic": "شعار مرقط",
+      "H.S. Code": "03 04 59 10 00 00"
+    },
+    {
+      "SFTA": "A",
+      "SG": "A",
+      "URA": "C",
+      "Duty Rate": "5%",
+      "Description in English": "Frozen fillet of tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp., etc.) carp (Cyprinus spp., Carassius spp., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Myopharyngodon piceus, Catla catla, Labeo spp., Osteochilus hasselti, Leptobarbus hoeveni, Megalobrama spp., etc.) eel (Anguilla spp.), Nile perch (Lates niloticus) and snakeheads (Channa spp.)",
+      "Description in Arabic": "الفيليه المجمد من الأنواع التالية تيلابيا (البلطي)، سمك القط، (لا سيما في أنواع سمك السلور القط وسمك البيلياني الحلقي والبلبوري والسخلي وسمك السلور الجاموس ولابيو والهوسيلياس بالمرزق وشعاع الدفة والحلة وعظلة جيارة الكوبرا وغير ذلك؛  وأجغر العامة)، ,الكارب، الأنجوليا",
+      "H.S. Code": "03 04 29 20 00 00"
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Duty Rate": "5%",
+      "Description in English": "Tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.), etc.",
+      "Description in Arabic": "التيلابيا (البلطي) أسماك القط (بانجاسيوس سيلوروس وكلاريس سيلوروس كلاريسات صفراء ) وأسات سمكية أخرى",
+      "H.S. Code": "03 04 62 00 00 00"
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Duty Rate": "5%",
+      "Description in English": "Nile Perch (Lates niloticus)",
+      "Description in Arabic": "قشرة نيلية (لاتس نيليتيك)",
+      "H.S. Code": "03 04 65 00 00 00"
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Duty Rate": "5%",
+      "Description in English": "Chalk (Pollachius virens)",
+      "Description in Arabic": "بكاليوت",
+      "H.S. Code": "03 04 74 00 00 00"
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Duty Rate": "5%",
+      "Description in English": "Other",
+      "Description in Arabic": "أخرى",
+      "H.S. Code": "03 04 79 20 00 00"
+    }
+  ],
+  "page_number": 10
+}

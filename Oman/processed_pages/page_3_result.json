@@ -1,0 +1,311 @@
+{
+  "entries": [
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Falcon",
+      "Description in Arabic": "الصقر",
+      "H.S. Code": "01 06 31 00 00 01"
+    },
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Owls",
+      "Description in Arabic": "البوم",
+      "H.S. Code": "01 06 31 00 00 02"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other birds of prey",
+      "Description in Arabic": "غيرها من الطيور الجارحة",
+      "H.S. Code": "01 06 31 00 99 09"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Parrots",
+      "Description in Arabic": "الببغاوات",
+      "H.S. Code": "01 06 32 10 00 01"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Parakeets",
+      "Description in Arabic": "البراكييت (البغبغانات الصغيرة)",
+      "H.S. Code": "01 06 32 20 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Macaw",
+      "Description in Arabic": "المكاو (البغبغانات الكبيرة)",
+      "H.S. Code": "01 06 32 30 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Cockatoo",
+      "Description in Arabic": "الكوكواتو",
+      "H.S. Code": "01 06 32 40 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "African parrot",
+      "Description in Arabic": "البغبغان الأفريقي",
+      "H.S. Code": "01 06 32 50 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other parrots",
+      "Description in Arabic": "بغبغانات أخرى",
+      "H.S. Code": "01 06 32 90 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other",
+      "Description in Arabic": "غيرها",
+      "H.S. Code": "01 06 33 00 99 09"
+    },
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "A",
+      "Duty Rate": "0%",
+      "Description in English": "Tame and wild pigeons, partridges, pheasants, quails, snipe, sand grouse, wild ducks",
+      "Description in Arabic": "الحمام (المكعبي والخوامي) والعصافير والدج والأوز والبط او",
+      "H.S. Code": "01 06 39 00 99 09"
+    },
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Tame pigeons",
+      "Description in Arabic": "الحمام المستأنس أو المتقبق ",
+      "H.S. Code": "01 06 39 10 00 01"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Partridge",
+      "Description in Arabic": "الحجل",
+      "H.S. Code": "01 06 39 10 00 02"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Quail",
+      "Description in Arabic": "السمانى",
+      "H.S. Code": "01 06 39 10 00 03"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Peacocks",
+      "Description in Arabic": "الطاووس",
+      "H.S. Code": "01 06 39 10 00 04"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Wild pigeons",
+      "Description in Arabic": "الحمام البري",
+      "H.S. Code": "01 06 39 10 00 05"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other",
+      "Description in Arabic": "غيره",
+      "H.S. Code": "01 06 39 10 00 09"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Wild ducks",
+      "Description in Arabic": "البط البري",
+      "H.S. Code": "01 06 39 10 00 13"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "A",
+      "Duty Rate": "0%",
+      "Description in English": "Ornamental birds",
+      "Description in Arabic": "الطيور الزينة",
+      "H.S. Code": "01 06 39 20 00 00"
+    },
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Hubara",
+      "Description in Arabic": "الحبارى",
+      "H.S. Code": "01 06 31 00 99 01"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other",
+      "Description in Arabic": "غيرها",
+      "H.S. Code": "01 06 31 00 99 09"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Insects",
+      "Description in Arabic": "الحشرات",
+      "H.S. Code": "01 06 41 00 00 00"
+    },
+    {
+      "SFTA": "A",
+      "SG": "",
+      "URA": "B",
+      "Duty Rate": "0%",
+      "Description in English": "Bees",
+      "Description in Arabic": "نحل",
+      "H.S. Code": "01 06 41 10 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other",
+      "Description in Arabic": "غيره",
+      "H.S. Code": "01 06 41 90 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Locust",
+      "Description in Arabic": "الجراد الصحراوي",
+      "H.S. Code": "01 06 49 00 00 00"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Butterflies",
+      "Description in Arabic": "الفراشات",
+      "H.S. Code": "01 06 49 00 00 01"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Worms",
+      "Description in Arabic": "الديدان",
+      "H.S. Code": "01 06 49 00 00 02"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other",
+      "Description in Arabic": "غيرها",
+      "H.S. Code": "01 06 49 00 00 04"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": "0%",
+      "Description in English": "Other",
+      "Description in Arabic": "غيرها",
+      "H.S. Code": "01 06 49 00 00 09"
+    },
+    {
+      "SFTA": "",
+      "SG": "",
+      "URA": "",
+      "Duty Rate": null,
+      "Description in English": "Chapter 2 - Meat and edible meat offal",
+      "Description in Arabic": "الباب الثاني - لحم وأحشاء صالحة للأكل",
+      "H.S. Code": null
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Duty Rate": null,
+      "Description in English": "Note:",
+      "Description in Arabic": "ملاحظة:",
+      "H.S. Code": null
+    },
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "B",
+      "Duty Rate": "5%",
+      "Description in English": "Fresh carcasses of bovine animals",
+      "Description in Arabic": "جثث أبقار طازجة",
+      "H.S. Code": "02 01 10 00 00 00"
+    },
+    {
+      "SFTA": "A",
+      "SG": "+",
+      "URA": "B",
+      "Duty Rate": "5%",
+      "Description in English": "Frozen carcasses of bovine animals",
+      "Description in Arabic": "جثث أبقار مجمدة",
+      "H.S. Code": "02 02 10 00 00 00"
+    },
+    {
+      "SFTA": null,
+      "SG": null,
+      "URA": null,
+      "Duty Rate": null,
+      "Description in English": "Note:",
+      "Description in Arabic": "ملاحظة:",
+      "H.S. Code": null
+    }
+  ],
+  "page_number": 3
+}
