@@ -1,45 +1,37 @@
-# Trade News Scraper
+# Undetected Trade News Scraper
 
-A Python scraper that collects trade-related news from the World Trade Organization (WTO) website.
-
-## Background
-
-This scraper was developed after finding that Reuters and Global Trade Alert websites have implemented strong anti-scraping measures. Instead, it focuses on the WTO website, which provides reliable trade-related news and announcements.
-
-## Alternative Data Sources
-
-For Reuters and GTA data, consider:
-
-1. Official APIs:
-   - Reuters Connect API: https://www.reutersagency.com/en/products/reuters-connect/
-   - Contact GTA for API access
-
-2. News Aggregator APIs:
-   - NewsAPI.org
-   - Google News API
-   - Event Registry API
-
-3. Other Trade Sources:
-   - Government trade websites
-   - Trade policy monitoring organizations
-   - International trade organizations
+A Python scraper that uses undetected-chromedriver to bypass anti-bot measures and collect trade-related news from Reuters and Global Trade Alert.
 
 ## Features
 
-- Scrapes WTO news and announcements
-- Automatic date parsing for various formats
-- Filters for content from the last 7 days
-- URL normalization
+- Uses undetected-chromedriver to bypass detection
+- Automatic scrolling to load dynamic content
+- Multiple selectors for resilient scraping
+- Trade-related keyword filtering
 - Comprehensive error handling
 - Detailed logging
 
 ## Requirements
 
-- Python 3.7+
-- Required packages: requests, beautifulsoup4
+1. Python 3.7+
+2. Chrome browser
+3. Required packages: undetected-chromedriver, selenium
 
 ## Installation
 
+1. Install Chrome browser if not already installed:
+```bash
+# On macOS:
+brew install --cask google-chrome
+
+# On Ubuntu:
+sudo apt-get install google-chrome-stable
+
+# On Windows:
+# Download and install Chrome from https://www.google.com/chrome/
+```
+
+2. Install Python requirements:
 ```bash
 pip install -r requirements.txt
 ```
@@ -47,52 +39,52 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python wto_scraper.py
+python undetected_scraper.py
 ```
 
 This will:
-1. Fetch recent news from WTO website
-2. Filter for content from the last 7 days
-3. Save results to `trade_news.json`
+1. Launch an undetected Chrome instance
+2. Scrape Reuters for trade-related articles
+3. Scrape Global Trade Alert for announcements
+4. Save results to `trade_news.json`
 
 ## Output Format
 
 ```json
 {
     "timestamp": "2025-02-24T10:00:00.000000",
-    "wto_news": [
+    "reuters_articles": [
         {
-            "title": "News Title",
-            "url": "News URL",
+            "title": "Article Title",
+            "url": "Article URL",
+            "date": "2025-02-24T10:00:00Z",
+            "description": "Article description",
+            "source": "Reuters"
+        }
+    ],
+    "gta_announcements": [
+        {
+            "title": "Announcement Title",
             "date": "2025-02-24",
-            "description": "News description",
-            "source": "WTO"
+            "description": "Announcement description",
+            "source": "Global Trade Alert"
         }
     ]
 }
 ```
 
-## Next Steps
+## Troubleshooting
 
-To get comprehensive trade news coverage, consider:
-
-1. Registering for official APIs:
-   - Reuters Connect
-   - NewsAPI.org
-   - Event Registry
-
-2. Adding more sources:
-   - UNCTAD (United Nations Conference on Trade and Development)
-   - National trade ministry websites
-   - Regional trade organization websites
-
-3. Setting up automated monitoring:
-   - Email notifications for new items
-   - Database storage for historical tracking
-   - API endpoint for data access
+If the scraper fails:
+1. Try without headless mode (remove the `--headless` option)
+2. Increase wait times between actions
+3. Check if Chrome is up to date
+4. Look for error messages in the logs
+5. Verify your internet connection
 
 ## Notes
 
-- The current implementation focuses on WTO news
-- Additional sources can be added as needed
-- Consider API-based solutions for Reuters and GTA data
+- Uses undetected-chromedriver to bypass anti-bot measures
+- Implements multiple fallback selectors
+- Includes trade-related keyword filtering
+- Handles dynamic page loading
