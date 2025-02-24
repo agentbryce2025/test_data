@@ -1,20 +1,37 @@
-# Trade News Scraper
+# Modern Trade News Scraper
 
-A Python scraper that collects trade-related news from Reuters and Global Trade Alert.
+A Python scraper that collects trade-related news from Reuters and Global Trade Alert using Playwright for robust web scraping.
+
+## Features
+
+- Uses Playwright for reliable web automation
+- Works on any system architecture (Windows, macOS, Linux)
+- Multiple fallback methods for finding content
+- Automatic scrolling to load more content
+- Comprehensive error handling and logging
+- Deduplication of articles
 
 ## Requirements
 
 1. Python 3.7+
-2. Firefox browser
-3. Required Python packages:
+2. Playwright and its dependencies
+
+## Installation
+
+1. Install Python requirements:
 ```bash
 pip install -r requirements.txt
+```
+
+2. Install Playwright browsers:
+```bash
+playwright install
 ```
 
 ## Usage
 
 ```bash
-python run_scrapers.py
+python modern_scraper.py
 ```
 
 This will create a `trade_news.json` file containing:
@@ -32,16 +49,17 @@ This will create a `trade_news.json` file containing:
             "url": "Article URL",
             "date": "2025-02-24T10:00:00Z",
             "description": "Article description",
-            "source": "Reuters"
+            "source": "Reuters",
+            "category": "tariffs"
         }
     ],
     "gta_announcements": [
         {
             "title": "Announcement Title",
-            "implementing_country": "Country Name",
             "date": "2025-02-24",
             "description": "Announcement description",
-            "source": "Global Trade Alert"
+            "source": "Global Trade Alert",
+            "url": "https://www.globaltradealert.org/latest"
         }
     ]
 }
@@ -51,21 +69,17 @@ This will create a `trade_news.json` file containing:
 
 If the scraper fails:
 1. Check your internet connection
-2. Verify Firefox is installed
-3. Check if the websites are accessible in your browser
-4. Try running without headless mode for debugging
+2. Make sure Playwright is installed correctly:
+   ```bash
+   playwright install
+   ```
+3. Check the logs for detailed error messages
+4. Try running without headless mode by changing `headless=True` to `headless=False`
+5. Increase wait times if content isn't loading fast enough
 
-## macOS-Specific Instructions
+## Notes
 
-For macOS users:
-1. Install Firefox if not already installed:
-```bash
-brew install firefox
-```
-
-2. Use the macOS-specific script:
-```bash
-python run_scrapers_mac.py
-```
-
-This version will automatically detect the Firefox installation on macOS and use the correct binary location.
+- The scraper uses Playwright to handle modern web pages
+- Implements automatic scrolling to load more content
+- Includes comprehensive error handling and logging
+- Works across all major operating systems and architectures
