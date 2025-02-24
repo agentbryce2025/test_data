@@ -66,7 +66,7 @@ def extract_table_data_from_image(image_base64: str) -> Dict[str, Any]:
     for attempt in range(MAX_RETRIES):
         try:
             response = openai.chat.completions.create(
-                model="gpt-4-vision-preview",
+                model="gpt-4-vision",
                 messages=[
                     {
                         "role": "system",

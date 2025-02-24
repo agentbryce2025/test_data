@@ -31,7 +31,7 @@ def encode_image_to_base64(image_path):
 def extract_data_from_image(image_base64):
     """Extract table data using the OpenAI vision model."""
     response = openai.chat.completions.create(
-        model="gpt-4-vision-preview",
+        model="gpt-4-vision",
         messages=[
             {
                 "role": "system",
