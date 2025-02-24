@@ -1,70 +1,52 @@
 import requests
 from datetime import datetime, timedelta
 import json
-import time
-from bs4 import BeautifulSoup
 
 class GTAScraper:
     def __init__(self):
-        self.base_url = "https://globaltradealert.org/activity-tracker"
-        self.params = {
-            'ki': '1',
-            'ka': '1',
-            'ko': '0',
-            'na': '0,999',
-            'ast': 'oneplus',
-            'nai': 'all',
-            'kim': '1',
-            'iis': 'oneplus',
-            'ni': '1,999',
-            'ke': '1',
-            'ies': 'oneplus',
-            'nei': 'all',
-            'ky': '1',
-            'kin': '1',
-            'krn': '1',
-            'kifd': '1',
-            'kit': '1',
-            'kmc': '1',
-            'kil': '1',
-            'kef': '1',
-            'kt': '1',
-            'kcf': '1',
-            'kas': '1',
-            'apit': 'tree',
-            'kap': '1',
-            'kid': '1',
-            'kr': '1',
-            'ij': 'any',
-            'ih': 'any',
+        self.api_url = "https://www.globaltradealert.org/api/v1/interventions"
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
 
     def get_last_week_announcements(self):
         announcements = []
+        
+        # Calculate date range
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=7)
+        
+        params = {
+            'start_date': start_date.strftime('%Y-%m-%d'),
+            'end_date': end_date.strftime('%Y-%m-%d'),
+            'format': 'json'
+        }
+        
         try:
-            response = requests.get(self.base_url, params=self.params)
-            soup = BeautifulSoup(response.text, 'html.parser')
+            print("Fetching GTA interventions...")
+            response = requests.get(self.api_url, headers=self.headers, params=params)
             
-            # Find all announcement elements (you'll need to adjust these selectors based on the actual HTML structure)
-            items = soup.find_all('div', class_='announcement-item')  # Adjust class name as needed
-            
-            one_week_ago = datetime.now() - timedelta(days=7)
-            
-            for item in items:
-                try:
-                    title = item.find('h3').text.strip()
-                    date_str = item.find('time').text.strip()
-                    date = datetime.strptime(date_str, "%Y-%m-%d")  # Adjust format as needed
-                    
-                    if date >= one_week_ago:
+            if response.status_code == 200:
+                data = response.json()
+                for item in data.get('interventions', []):
+                    try:
                         announcements.append({
-                            "title": title,
-                            "date": date_str,
+                            "title": item.get('title'),
+                            "implementing_country": item.get('implementing_country'),
+                            "announcement_date": item.get('announcement_date'),
+                            "implementation_date": item.get('implementation_date'),
+                            "description": item.get('description'),
                             "source": "Global Trade Alert"
                         })
-                except Exception as e:
-                    print(f"Error processing announcement: {e}")
-                    continue
+                        print(f"Found intervention: {item.get('title')}")
+                    except Exception as e:
+                        print(f"Error processing intervention: {e}")
+                        continue
+            else:
+                print(f"Failed to fetch data: {response.status_code}")
+                # Save the response for debugging
+                with open('gta_error.html', 'w', encoding='utf-8') as f:
+                    f.write(response.text)
                     
         except Exception as e:
             print(f"Error scraping Global Trade Alert: {e}")
@@ -74,6 +56,7 @@ class GTAScraper:
     def save_to_json(self, announcements, filename="gta_announcements.json"):
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(announcements, f, indent=4, ensure_ascii=False)
+        print(f"Saved {len(announcements)} announcements to {filename}")
 
 def main():
     scraper = GTAScraper()

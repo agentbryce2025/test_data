@@ -1,70 +1,46 @@
-from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import feedparser
 from datetime import datetime, timedelta
 import json
 import time
 
 class ReutersScraper:
     def __init__(self):
-        self.url = "https://www.reuters.com/business/tariffs/"
-        self.options = Options()
-        self.options.add_argument('--headless')
-        self.driver = None
-
-    def setup_driver(self):
-        service = Service('geckodriver')
-        self.driver = webdriver.Firefox(service=service, options=self.options)
+        self.feed_url = "https://www.reuters.com/rss/businessNews"
 
     def get_last_week_articles(self):
-        self.setup_driver()
+        print("Fetching Reuters RSS feed...")
+        feed = feedparser.parse(self.feed_url)
         articles = []
-        try:
-            self.driver.get(self.url)
-            # Wait for articles to load
-            time.sleep(5)
-            
-            # Find all article elements
-            article_elements = self.driver.find_elements(By.CSS_SELECTOR, "article")
-            
-            one_week_ago = datetime.now() - timedelta(days=7)
-            
-            for article in article_elements:
-                try:
-                    # Extract article information
-                    title = article.find_element(By.CSS_SELECTOR, "h3").text
-                    link = article.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
-                    try:
-                        date_element = article.find_element(By.CSS_SELECTOR, "time")
-                        date_str = date_element.get_attribute("datetime")
-                        article_date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%SZ")
-                    except:
-                        continue
-                        
-                    if article_date >= one_week_ago:
+        
+        one_week_ago = datetime.now() - timedelta(days=7)
+        
+        for entry in feed.entries:
+            try:
+                # Parse the publication date
+                pub_date = datetime(*entry.published_parsed[:6])
+                
+                if pub_date >= one_week_ago:
+                    # Check if the article is related to tariffs/trade
+                    if any(keyword in entry.title.lower() or keyword in entry.description.lower() 
+                           for keyword in ['tariff', 'trade', 'import', 'export', 'duty', 'customs']):
                         articles.append({
-                            "title": title,
-                            "url": link,
-                            "date": date_str,
+                            "title": entry.title,
+                            "url": entry.link,
+                            "date": entry.published,
+                            "description": entry.description,
                             "source": "Reuters"
                         })
-                except Exception as e:
-                    print(f"Error processing article: {e}")
-                    continue
-                    
-        except Exception as e:
-            print(f"Error scraping Reuters: {e}")
-        finally:
-            self.driver.quit()
-            
+                        print(f"Found relevant article: {entry.title}")
+            except Exception as e:
+                print(f"Error processing entry: {e}")
+                continue
+                
         return articles
 
     def save_to_json(self, articles, filename="reuters_articles.json"):
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(articles, f, indent=4, ensure_ascii=False)
+        print(f"Saved {len(articles)} articles to {filename}")
 
 def main():
     scraper = ReutersScraper()
