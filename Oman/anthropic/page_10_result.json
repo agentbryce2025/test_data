@@ -1,0 +1,309 @@
+{
+    "page": 10,
+    "data": [
+        {
+            "HS_CODE": "03 04 59 10 00 00",
+            "DESCRIPTION": "- - - Spotted Groupers",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 04 59 20 00 00",
+            "DESCRIPTION": "- - - Emperors",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 04 59 90 00 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 04 61 00 00 00",
+            "DESCRIPTION": "- - Tilapias (Oreochromis spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "B",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 04 62 00 00 00",
+            "DESCRIPTION": "- - Catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "B",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 04 63 00 00 00",
+            "DESCRIPTION": "- - Nile Perch (Lates niloticus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "B",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 04 69 00 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "B",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 04 71 00 00 00",
+            "DESCRIPTION": "- - Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 72 00 00 00",
+            "DESCRIPTION": "- - Haddock (Melanogrammus aeglefinus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 73 00 00 00",
+            "DESCRIPTION": "- - Coalfish (Pollachius virens)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 74 00 00 00",
+            "DESCRIPTION": "- - Hake (Merluccius spp., Urophycis spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 75 00 00 00",
+            "DESCRIPTION": "- - Alaska Pollock (Theragra chalcogramma)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 79 00 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 81 00 00 00",
+            "DESCRIPTION": "- - Pacific salmon (Oncorhynchus nerka, Oncorhynchus gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchuskisutch, Oncorhynchus masou and Oncorhynchus rhodurus),Atlantic salmon (Salmo salar) and Danube salmon (Hucho hucho)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 82 00 00 00",
+            "DESCRIPTION": "- - Trout (Salmo trutta, Oncorhynchus mykiss, Oncorhynchus clarki, Oncorhynchus aguabonita, Oncorhynchus gilae, Oncorhynchusapache and Oncorhynchus chrysogaster)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 83 00 00 00",
+            "DESCRIPTION": "- - Flat fish (Pleuronectidae, Bothidae, Cynoglossidae, Soleidae, Scophthalmidae and Citharidae)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 84 00 00 00",
+            "DESCRIPTION": "- - Swordfish (Xiphias gladius)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 85 00 00 00",
+            "DESCRIPTION": "- - Toothfish (Dissostichus spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 86 00 00 00",
+            "DESCRIPTION": "- - Herrings (Clupea harengus, Clupea pallasii)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 87 00 00 00",
+            "DESCRIPTION": "- - Tunas (of the genus Thunnus), skipjack tuna (stripe-bellied bonito) (Katsuwonus pelamis)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 88 00 00 00",
+            "DESCRIPTION": "- - Dogfish, other sharks, rays and skates (Rajidae)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 89 10 00 00",
+            "DESCRIPTION": "- - - Spotted Groupers",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 89 20 00 00",
+            "DESCRIPTION": "- - - Emperors",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 89 90 00 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 91 00 00 00",
+            "DESCRIPTION": "- - Swordfish (Xiphias gladius)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 92 00 00 00",
+            "DESCRIPTION": "- - Toothfish (Dissostichus spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 93 00 00 00",
+            "DESCRIPTION": "- - Tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.), carp (Cyprinus spp., Carassius spp., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus), Nile perch (Lates niloticus), snakeheads (Channa spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 94 00 00 00",
+            "DESCRIPTION": "- - Alaska Pollock (Theragra chalcogramma)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 95 00 00 00",
+            "DESCRIPTION": "- - Fish of the families Bregmacerotidae, Euclichthyidae, Gadidae, Macrouridae, Melanonidae, Merlucciidae, Moridae and Muraenolepididae, other than Alaska Pollock (Theragra chalcogramma)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 96 00 00 00",
+            "DESCRIPTION": "- - Dogfish and other sharks",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 97 00 00 00",
+            "DESCRIPTION": "- - Rays and skates (Rajidae)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 04 99 00 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03.05",
+            "DESCRIPTION": "Fish, dried, salted or in brine; smoked fish, whether or not cooked before or during the smoking process.",
+            "DUTY_RATE": "",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 05 20 00 00 00",
+            "DESCRIPTION": "- Livers and roes, dried, smoked, salted or in brine",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 05 31 00 00 00",
+            "DESCRIPTION": "- - Tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp.,Clarias spp., Ictalurus spp.), carp (Cyprinus carpio, Carassius carassius, Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus), eels (Anguilla spp.), Nile perch (Lates niloticus) and snakeheads (Channa spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 05 32 00 00 00",
+            "DESCRIPTION": "- - Fish of the families Bregmacerotidae, Euclichthyidae, Gadidae, Macrouridae, Melanonidae, Merlucciidae, Moridae and Muraenolepididae",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 05 39 10 00 00",
+            "DESCRIPTION": "- - - Sharks",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 05 39 90 00 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "B"
+        }
+    ]
+}

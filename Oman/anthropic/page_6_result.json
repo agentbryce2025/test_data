@@ -1,0 +1,293 @@
+{
+    "page": 6,
+    "data": [
+        {
+            "HS_CODE": "03.01",
+            "DESCRIPTION": "Live fish.",
+            "DUTY_RATE": "",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 01 11 00 00",
+            "DESCRIPTION": "- Ornamental fish : - - Freshwater",
+            "DUTY_RATE": "0%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 19 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "0%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 91 00 00",
+            "DESCRIPTION": "- Other live fish: - - Trout (Salmo trutta, Oncorhynchus mykiss, Oncorhynchus clarki, Oncorhynchus aguabonita, Oncorhynchus gilae,Oncorhynchus apache and Oncorhynchus chrysogaster)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 92 00 00",
+            "DESCRIPTION": "- - Eels (Anguilla spp.)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 93 00 00",
+            "DESCRIPTION": "- - Carp (Cyprinus spp., Carassius spp., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus, Catla catla, Labeo spp., Osteochilus hasselti, Leptobarbus hoeveni, Megalobrama spp.)",
+            "DUTY_RATE": "0%",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 01 94 00 00",
+            "DESCRIPTION": "- - Atlantic and Pacific bluefin tunas (Thunnus thynnus, Thunnus orientalis)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 95 00 00",
+            "DESCRIPTION": "- - Southern bluefin tunas (Thunnus maccoyii)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 99 10 00",
+            "DESCRIPTION": "- - Other : - - - Sharks",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 01 99 90 00",
+            "DESCRIPTION": "- - - Other live fish",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03.02",
+            "DESCRIPTION": "Fish, fresh or chilled, excluding fish fillets and other fish meat of heading 03.04.",
+            "DUTY_RATE": "",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 02 11 00 00",
+            "DESCRIPTION": "- Salmonidae, excluding fish offal of subheadings 0302.91 to 0302.99: - - Trout (Salmo trutta, Oncorhynchus mykiss, Oncorhynchus clarki, Oncorhynchus aguabonita, Oncorhynchus gilae, Oncorhynchus apache and Oncorhynchus chrysogaster)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 13 00 00",
+            "DESCRIPTION": "- - Pacific salmon (Oncorhynchus nerka, Oncorhynchus gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchus kisutch, Oncorhynchus masou and Oncorhynchus rhodurus)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 14 00 00",
+            "DESCRIPTION": "- - Atlantic salmon (Salmo salar) and Danube salmon (Hucho hucho)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 19 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 21 00 00",
+            "DESCRIPTION": "- Flat fish (Pleuronectidae, Bothidae, Cynoglossidae, Soleidae, Scophthalmidae and Citharidae), excluding edible fish offal of subheadings 0302.91 to 0302.99: - - Halibut (Reinhardtius hippoglossoides, Hippoglossus hippoglossus, Hippoglossus stenolepis)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 22 00 00",
+            "DESCRIPTION": "- - Plaice (Pleuronectes platessa)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 23 00 00",
+            "DESCRIPTION": "- - Sole (Solea spp.)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 24 00 00",
+            "DESCRIPTION": "- - Turbots (Psetta maxima)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 29 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 31 00 00",
+            "DESCRIPTION": "- Tunas (of the genus Thunnus), skipjack tuna (stripe-bellied bonito) (Katsuwonus pelamis), excluding edible fish offal of subheadings 0302.91 to 0302.99 : - - Albacore or longfinned tunas (Thunnus alalunga)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 32 00 00",
+            "DESCRIPTION": "- - Yellowfin tunas (Thunnus albacares)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 33 00 00",
+            "DESCRIPTION": "- - Skipjack tuna (stripe-bellied bonito) (Katsuwonus pelamis)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 34 00 00",
+            "DESCRIPTION": "- - Bigeye tunas (Thunnus obesus)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 35 00 00",
+            "DESCRIPTION": "- - Atlantic and Pacific bluefin tunas (Thunnus thynnus, Thunnus orientalis)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 36 00 00",
+            "DESCRIPTION": "- - Southern bluefin tunas (Thunnus maccoyii)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 10 00",
+            "DESCRIPTION": "- - Other : - - - Longtail tuna (Thunnus tonggol)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 90 00",
+            "DESCRIPTION": "- - - Kawakawa (Thunnus Affinis)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 91 00",
+            "DESCRIPTION": "- - Other : - - - - Saksatana fish (Sarda orientalis), fresh or chilled",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 92 00",
+            "DESCRIPTION": "- - - - Tabarah fish (Auxis thazard), fresh or chilled",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 93 00",
+            "DESCRIPTION": "- - - - Hapbash fish (Katsuwonus pelamis), fresh or chilled",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 94 00",
+            "DESCRIPTION": "- - - - Baghlah fish (Rastrelliger kanagurta), fresh or chilled",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 39 99 00",
+            "DESCRIPTION": "- - - - Other tuna fish, fresh or chilled",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 41 00 00",
+            "DESCRIPTION": "- Herrings (Clupea harengus, Clupea pallasii), anchovies (Engraulis spp.), sardines (Sardina pilchardus, Sardinops spp.), sardinella (Sardinella spp.), brisling or sprats (Sprattus sprattus), mackerel (Scomber scombrus, Scomber australasicus, Scomber japonicus), Indian mackerels (Rastrelliger spp.), seerfishes (Scomberomorus spp), jack and horse mackerel (Trachurus spp.), jacks, crevalles (Caranx spp.), cobia (Rachycentron canadum), silver pomfrets (Pampus spp.), Pacific saury (Cololabis saira), scads (Decapterus spp.), capelin (Mallotus villosus), swordfish (Xiphias gladius), Kawakawa (Euthynnus affinis), bonitos (Sarda spp.), marlins, sailfishes, spearfish (Istiophoridae), excluding edible fish offal of subheadings 0302.91 to 0302.99 : - - Herrings (Clupea harengus, Clupea pallasii)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 42 00 00",
+            "DESCRIPTION": "- - Anchovies (Engraulis spp.)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "03 02 43 00 00",
+            "DESCRIPTION": "- - Sardines (Sardina pilchardus, Sardinops spp.), sardinella (Sardinella spp.), brisling or sprats (Sprattus sprattus)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        }
+    ]
+}

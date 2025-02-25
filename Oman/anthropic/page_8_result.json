@@ -1,0 +1,365 @@
+{
+    "page": 8,
+    "data": [
+        {
+            "HS_CODE": "03 03 23 00 00",
+            "DESCRIPTION": "- - Tilapias (Oreochromis spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 24 00 00",
+            "DESCRIPTION": "- - Catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 25 00 00",
+            "DESCRIPTION": "- - Carp (Cyprinus spp., Carassius., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 26 00 00",
+            "DESCRIPTION": "- - Eels (Anguilla spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 29 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 31 00 00",
+            "DESCRIPTION": "- - Halibut (Reinhardtius hippoglossoides, Hippoglossus hippoglossus, Hippoglossus stenolepis)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 32 00 00",
+            "DESCRIPTION": "- - Plaice (Pleuronectes platessa)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 33 00 00",
+            "DESCRIPTION": "- - Sole (Solea spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 34 00 00",
+            "DESCRIPTION": "- - Turbots (Psetta maxima)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 39 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 03 41 00 00",
+            "DESCRIPTION": "- - Albacore or longfinned tunas (Thunnus alalunga)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 42 00 00",
+            "DESCRIPTION": "- - Yellowfin tunas (Thunnus albacares)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 43 00 00",
+            "DESCRIPTION": "- - Skipjack tuna (stripe-bellied bonito) (Katsuwonus pelamis)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 44 00 00",
+            "DESCRIPTION": "- - Bigeye tunas (Thunnus obesus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 45 00 00",
+            "DESCRIPTION": "- - Atlantic and Pacific bluefin tunas (Thunnus thynnus, Thunnus orientalis)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 46 00 00",
+            "DESCRIPTION": "- - Southern bluefin tunas (Thunnus maccoyii)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 03 49 10 00",
+            "DESCRIPTION": "- - - Longtail tuna (Thunnus tonggol)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 20 00",
+            "DESCRIPTION": "- - - Kawakawa(Thunnus Affinis)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 30 00",
+            "DESCRIPTION": "- - - All these fish, frozen",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 40 00",
+            "DESCRIPTION": "- - - Sorsana fish (Sarda orientalis), frozen",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 50 00",
+            "DESCRIPTION": "- - - Kingies fish (Kawa khuwan), frozen",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 80 00",
+            "DESCRIPTION": "- - - All these fish, frozen",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 49 90 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 51 00 00",
+            "DESCRIPTION": "- - Herrings (Clupea harengus, Clupea pallasii)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 53 00 00",
+            "DESCRIPTION": "- - Sardines (Sardina pilchardus, Sardinops spp.), sardinella (Sardinella spp.), brisling or sprats (Sprattus sprattus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 54 00 00",
+            "DESCRIPTION": "- - Mackerel (king fish, solited soabuag mackerel)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 54 20 00",
+            "DESCRIPTION": "- - - Indian mackerel",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 54 90 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 55 00 00",
+            "DESCRIPTION": "- - Jack and horse mackerel (Trachurus spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 03 55 10 00",
+            "DESCRIPTION": "- - - Travelly (bayad, bigeye, scad)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 55 20 00",
+            "DESCRIPTION": "- - - Jack pomfret",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 55 50 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 56 00 00",
+            "DESCRIPTION": "- - Cobia (Rachycentron canadum)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 57 00 00",
+            "DESCRIPTION": "- - Swordfish (Xiphias gladius)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 59 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "03 03 59 10 00",
+            "DESCRIPTION": "- - - Jack pomfret",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 59 90 00",
+            "DESCRIPTION": "- - - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 63 00 00",
+            "DESCRIPTION": "- - Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "C",
+            "USA": "B"
+        },
+        {
+            "HS_CODE": "03 03 64 00 00",
+            "DESCRIPTION": "- - Haddock (Melanogrammus aeglefinus)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 65 00 00",
+            "DESCRIPTION": "- - Coalfish (Pollachius virens)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 66 00 00",
+            "DESCRIPTION": "- - Hake (Merluccius spp., Urophycis spp.)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "C",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 67 00 00",
+            "DESCRIPTION": "- - Alaska Pollock (Theragra chalcogramma)",
+            "DUTY_RATE": "5%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 68 00 00",
+            "DESCRIPTION": "- - Blue whitings (Micromesistius poutassou, Micromesistius australis)",
+            "DUTY_RATE": "5%",
+            "EFTA": "B",
+            "SG": "A",
+            "USA": "A"
+        },
+        {
+            "HS_CODE": "03 03 69 00 00",
+            "DESCRIPTION": "- - Other",
+            "DUTY_RATE": "5%",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        }
+    ]
+}

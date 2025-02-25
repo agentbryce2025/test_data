@@ -1,0 +1,389 @@
+{
+    "page": 1,
+    "data": [
+        {
+            "HS_CODE": "01.01",
+            "DESCRIPTION": "Live horses, asses, mules and hinnies.",
+            "DUTY_RATE": "",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "01.01.21.10.00.01",
+            "DESCRIPTION": "Horses: Pure-bred breeding animals: Of Arab breed males",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.21.10.00.02",
+            "DESCRIPTION": "Of Arab breed females",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.21.90.00.01",
+            "DESCRIPTION": "Other: Of non-Arab breed males",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.21.90.00.02",
+            "DESCRIPTION": "Of non-Arab breed females",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.10.00.01",
+            "DESCRIPTION": "Other: Horses for sport: Males of Arab breed for sport",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.10.00.02",
+            "DESCRIPTION": "Females of Arab breed for sport",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.10.00.03",
+            "DESCRIPTION": "Males of non-Arab breed for sport",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.10.00.04",
+            "DESCRIPTION": "Females of non-Arab breed for sport",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.20.00.01",
+            "DESCRIPTION": "Ponies: Ponies (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.20.00.02",
+            "DESCRIPTION": "Ponies (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.90.00.01",
+            "DESCRIPTION": "Other: Horses of Arab breed for beauty contests",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.90.00.02",
+            "DESCRIPTION": "Horses of foreign breeds for beauty contests",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.29.90.00.03",
+            "DESCRIPTION": "Other horses for beauty contests",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.30.00.00.00",
+            "DESCRIPTION": "Asses",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.01.90.00.00.00",
+            "DESCRIPTION": "Other",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02",
+            "DESCRIPTION": "Live bovine animals.",
+            "DUTY_RATE": "",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "01.02.21.00.00.01",
+            "DESCRIPTION": "Cattle: Pure-bred breeding animals: Pure-bred bovine (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.21.00.00.02",
+            "DESCRIPTION": "Pure-bred bovine (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.29.00.00.03",
+            "DESCRIPTION": "Other: Bovine for slaughter",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.29.00.00.04",
+            "DESCRIPTION": "Bovine for dairy production",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.29.00.00.99",
+            "DESCRIPTION": "Other cattle",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.31.00.00.01",
+            "DESCRIPTION": "Buffalo: Pure-bred breeding animals: Pure-bred breeding buffalo (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.31.00.00.02",
+            "DESCRIPTION": "Pure-bred breeding buffalo (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.39.00.00.01",
+            "DESCRIPTION": "Other: Buffalo for slaughter (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.39.00.00.02",
+            "DESCRIPTION": "Buffalo for slaughter (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.39.00.00.99",
+            "DESCRIPTION": "Other buffalo for other purposes",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.90.11.00.00",
+            "DESCRIPTION": "Other: Oxys: Live oxen for work",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.90.13.00.00",
+            "DESCRIPTION": "Live African oxys",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.90.19.00.00",
+            "DESCRIPTION": "Other live oxys",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.02.90.90.00.00",
+            "DESCRIPTION": "Other live bovine",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.03",
+            "DESCRIPTION": "Live swine.",
+            "DUTY_RATE": "PROHIBITED",
+            "EFTA": "P",
+            "SG": "C",
+            "USA": "I"
+        },
+        {
+            "HS_CODE": "01.03.10.00.00.00",
+            "DESCRIPTION": "Pure-bred breeding animals",
+            "DUTY_RATE": "PROHIBITED",
+            "EFTA": "P",
+            "SG": "C",
+            "USA": "I"
+        },
+        {
+            "HS_CODE": "01.03.91.00.00.00",
+            "DESCRIPTION": "Other: Weighing less than 50 kg",
+            "DUTY_RATE": "PROHIBITED",
+            "EFTA": "P",
+            "SG": "C",
+            "USA": "I"
+        },
+        {
+            "HS_CODE": "01.03.92.00.00.00",
+            "DESCRIPTION": "Weighing 50 kg or more",
+            "DUTY_RATE": "PROHIBITED",
+            "EFTA": "P",
+            "SG": "C",
+            "USA": "I"
+        },
+        {
+            "HS_CODE": "01.04",
+            "DESCRIPTION": "Live sheep and goats.",
+            "DUTY_RATE": "",
+            "EFTA": "",
+            "SG": "",
+            "USA": ""
+        },
+        {
+            "HS_CODE": "01.04.10.10.00.01",
+            "DESCRIPTION": "Sheep: Pure-bred breeding: Pure-bred breeding sheep (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.10.10.00.02",
+            "DESCRIPTION": "Pure-bred breeding sheep (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.10.90.00.01",
+            "DESCRIPTION": "Other: Sheep for slaughter (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.10.90.00.02",
+            "DESCRIPTION": "Sheep for slaughter (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.10.90.00.03",
+            "DESCRIPTION": "Sheep for dairy production (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.10.90.99.99",
+            "DESCRIPTION": "Other",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.20.10.00.01",
+            "DESCRIPTION": "Goats: Pure-bred breeding: Pure-bred breeding goats (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.20.10.00.02",
+            "DESCRIPTION": "Pure-bred breeding goats (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.20.90.00.01",
+            "DESCRIPTION": "Other: Goats for slaughter (males)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.20.90.00.02",
+            "DESCRIPTION": "Goats for slaughter (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.20.90.00.03",
+            "DESCRIPTION": "Goats for dairy production (females)",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        },
+        {
+            "HS_CODE": "01.04.20.90.99.99",
+            "DESCRIPTION": "Other",
+            "DUTY_RATE": "0%",
+            "EFTA": "A",
+            "SG": "A",
+            "USA": "D"
+        }
+    ]
+}

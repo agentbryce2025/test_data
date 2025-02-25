@@ -1,0 +1,234 @@
+[
+    {
+        "HS_CODE": "03 05 41 00 00",
+        "DESCRIPTION": "- Pacific salmon (Oncorhynchus nerka, Oncorhynchus gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchus kisutch, Oncorhynchus masou and Oncorhynchus rhodurus), Atlantic salmon (Salmo salar) and Danube salmon (Hucho hucho)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 42 00 00",
+        "DESCRIPTION": "-- Herrings (Clupea harengus, Clupea pallasii)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 43 00 00",
+        "DESCRIPTION": "-- Trout (Salmo trutta, Oncorhynchus mykiss, Oncorhynchus clarki, Oncorhynchus aguabonita, Oncorhynchus gilae, Oncorhynchus apache and Oncorhynchus chrysogaster)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 44 00 00",
+        "DESCRIPTION": "-- Tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.), carp (Cyprinus spp., Carassius spp., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus, Catla catla, Labeo spp., Osteochilus hasselti, Leptobarbus hoeveni, Megalobrama spp.), eels (Anguilla spp.), Nile perch (Lates niloticus) and snakeheads (Channa spp.)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 49 00 00",
+        "DESCRIPTION": "-- Other",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 51 00 00",
+        "DESCRIPTION": "-- Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)",
+        "DUTY_RATE": "5%",
+        "EFTA": "A",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 52 00 00",
+        "DESCRIPTION": "-- Tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.), carp (Cyprinus spp., Carassius spp., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus, Catla catla, Labeo spp., Osteochilus hasselti, Leptobarbus hoeveni, Megalobrama spp.), eels (Anguilla spp.), Nile perch (Lates niloticus) and snakeheads (Channa spp.)",
+        "DUTY_RATE": "5%",
+        "EFTA": "A",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 53 00 00",
+        "DESCRIPTION": "-- Fish of the families Bregmacerotidae, Euclichthyidae, Gadidae, Macrouridae, Melanonidae, Merlucciidae, Moridae and Muraenolepididae, other than cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)",
+        "DUTY_RATE": "5%",
+        "EFTA": "A",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 54 00 00",
+        "DESCRIPTION": "-- Herrings (Clupea harengus, Clupea pallasii), anchovies (Engraulis spp.), sardines (Sardina pilchardus, Sardinops spp.), sardinella (Sardinella spp.), brisling or sprats (Sprattus sprattus), mackerel (Scomber scombrus, Scomber australasicus, Scomber japonicus), Indian mackerels (Rastrelliger spp.), seerfishes (Scomberomorus spp.), jack and horse mackerel (Trachurus spp.), jacks, crevalles (Caranx spp.), cobia (Rachycentron canadum), silver pomfrets (Pampus spp.), Pacific saury (Cololabis saira), scads (Decapterus spp.), capelin (Mallotus villosus), swordfish (Xiphias gladius), Kawakawa (Euthynnus affinis), bonitos (Sarda spp.), marlins, sailfishes, spearfish (Istiophoridae)",
+        "DUTY_RATE": "5%",
+        "EFTA": "A",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 59 30 00",
+        "DESCRIPTION": "--- Anchovies (Engraulis spp.)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 59 90 00",
+        "DESCRIPTION": "--- Other",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 61 00 00",
+        "DESCRIPTION": "-- Herrings (Clupea harengus, Clupea pallasii)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 62 00 00",
+        "DESCRIPTION": "-- Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 63 00 00",
+        "DESCRIPTION": "-- Anchovies (Engraulis spp.)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 64 00 00",
+        "DESCRIPTION": "-- Tilapias (Oreochromis spp.), catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.), carp (Cyprinus spp., Carassius spp., Ctenopharyngodon idellus, Hypophthalmichthys spp., Cirrhinus spp., Mylopharyngodon piceus, Catla catla, Labeo spp., Osteochilus hasselti, Leptobarbus hoeveni, Megalobrama spp.), eels (Anguilla spp.), Nile perch (Lates niloticus) and snakeheads (Channa spp.)",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 69 00 00",
+        "DESCRIPTION": "-- Other",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 05 71 00 00",
+        "DESCRIPTION": "-- Shark fins",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 72 00 00",
+        "DESCRIPTION": "-- Fish heads, tails and maws",
+        "DUTY_RATE": "5%",
+        "EFTA": "B",
+        "SG": "C",
+        "USA": "A"
+    },
+    {
+        "HS_CODE": "03 05 79 00 00",
+        "DESCRIPTION": "-- Other",
+        "DUTY_RATE": "5%",
+        "EFTA": "",
+        "SG": "",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03.06",
+        "DESCRIPTION": "Crustaceans, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; smoked crustaceans, whether in shell or not, whether or not cooked before or during the smoking process; crustaceans, in shell, cooked by steaming or by boiling in water, whether or not chilled, frozen, dried, salted or in brine.",
+        "DUTY_RATE": "",
+        "EFTA": "",
+        "SG": "",
+        "USA": ""
+    },
+    {
+        "HS_CODE": "03 06 11 00 00",
+        "DESCRIPTION": "-- Rock lobster and other sea crawfish (Palinurus spp., Panulirus spp., Jasus spp.)",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 12 00 00",
+        "DESCRIPTION": "-- Lobsters (Homarus spp.)",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 14 00 00",
+        "DESCRIPTION": "-- Crabs",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 15 00 00",
+        "DESCRIPTION": "-- Norway lobsters (Nephrops norvegicus)",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 16 00 00",
+        "DESCRIPTION": "-- Cold-water shrimps and prawns (Pandalus spp., Crangon crangon)",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 17 00 00",
+        "DESCRIPTION": "-- Other shrimps and prawns",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 19 00 00",
+        "DESCRIPTION": "-- Other",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 31 00 03",
+        "DESCRIPTION": "-- Rock lobster and other sea crawfish (Palinurus spp., Panulirus spp., Jasus spp.) : Live rock lobster and other sea crawfish (Palinurus spp., Panulirus spp., Jasus spp.)",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    },
+    {
+        "HS_CODE": "03 06 31 00 04",
+        "DESCRIPTION": "-- Rock lobster and other sea crawfish (Palinurus spp., Panulirus spp., Jasus spp.) : Fresh or chilled Rock lobster and other sea crawfish (Palinurus spp., Panulirus spp., Jasus spp.)",
+        "DUTY_RATE": "0%",
+        "EFTA": "A",
+        "SG": "A",
+        "USA": "D"
+    }
+]
